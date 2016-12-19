@@ -1,0 +1,827 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "public_html/wp-content/themes/zerif-lite/functions.php",
+			"settings":
+			{
+				"buffer_size": 69859,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 505 files for \"sections\"\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\css\\customize-nav-menus-rtl.css:\n  500  #available-menu-items .accordion-section-content {\n  501  \toverflow-y: auto;\n  502: \tmax-height: 200px; /* This gets set in JS to fit the screen size, and based on # of sections. */\n  503  \tbackground: transparent;\n  504  }\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\css\\customize-nav-menus.css:\n  500  #available-menu-items .accordion-section-content {\n  501  \toverflow-y: auto;\n  502: \tmax-height: 200px; /* This gets set in JS to fit the screen size, and based on # of sections. */\n  503  \tbackground: transparent;\n  504  }\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\css\\customize-widgets-rtl.css:\n    4  \n    5  /**\n    6:  * Hide all sidebar sections by default, only show them (via JS) once the\n    7   * preview loads and we know whether the sidebars are used in the template.\n    8   */\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\css\\customize-widgets.css:\n    4  \n    5  /**\n    6:  * Hide all sidebar sections by default, only show them (via JS) once the\n    7   * preview loads and we know whether the sidebars are used in the template.\n    8   */\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\customize.php:\n  143  \n  144  \t\t\t<div id=\"customize-theme-controls\">\n  145: \t\t\t\t<ul><?php // Panels and sections are managed here via JavaScript ?></ul>\n  146  \t\t\t</div>\n  147  \t\t</div>\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\edit-form-advanced.php:\n  721  <?php\n  722  /**\n  723:  * Fires after all meta box sections have been output, before the closing #post-body div.\n  724   *\n  725   * @since 2.1.0\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\edit-tags.php:\n  234  \t$help ='';\n  235  \tif ( 'category' == $taxonomy )\n  236: \t\t$help = '<p>' . sprintf(__( 'You can use categories to define sections of your site and group related posts. The default category is &#8220;Uncategorized&#8221; until you change it in your <a href=\"%s\">writing settings</a>.' ) , 'options-writing.php' ) . '</p>';\n  237  \telseif ( 'link_category' == $taxonomy )\n  238  \t\t$help = '<p>' . __( 'You can create groups of links by using Link Categories. Link Category names must be unique and Link Categories are separate from the categories you use for posts.' ) . '</p>';\n  ...\n  243  \t\t$help .= '<p>' . __( 'You can delete Link Categories in the Bulk Action pull-down, but that action does not delete the links within the category. Instead, it moves them to the default Link Category.' ) . '</p>';\n  244  \telse\n  245: \t\t$help .='<p>' . __( 'What&#8217;s the difference between categories and tags? Normally, tags are ad-hoc keywords that identify important information in your post (names, subjects, etc) that may or may not recur in other posts, while categories are pre-determined sections. If you think of your site like a book, the categories are like the Table of Contents and the tags are like the terms in the index.' ) . '</p>';\n  246  \n  247  \tget_current_screen()->add_help_tab( array(\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\includes\\ajax-actions.php:\n 3338  \t$api = themes_api( 'theme_information', array(\n 3339  \t\t'slug'   => $slug,\n 3340: \t\t'fields' => array( 'sections' => false ),\n 3341  \t) );\n 3342  \n ....\n 3597  \t\t'slug'   => sanitize_key( wp_unslash( $_POST['slug'] ) ),\n 3598  \t\t'fields' => array(\n 3599: \t\t\t'sections' => false,\n 3600  \t\t),\n 3601  \t) );\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\includes\\class-theme-upgrader.php:\n  112  \n  113  \t\t// We don't have the parent theme, let's install it.\n  114: \t\t$api = themes_api('theme_information', array('slug' => $theme_info->get('Template'), 'fields' => array('sections' => false, 'tags' => false) ) ); //Save on a bit of bandwidth.\n  115  \n  116  \t\tif ( ! $api || is_wp_error($api) ) {\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\includes\\class-wp-plugins-list-table.php:\n  195  \t\t\t}\n  196  \n  197: \t\t\t// Filter into individual sections\n  198  \t\t\tif ( is_multisite() && ! $screen->in_admin( 'network' ) && is_network_only_plugin( $plugin_file ) && ! is_plugin_active( $plugin_file ) ) {\n  199  \t\t\t\tif ( $show_network_active ) {\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\includes\\dashboard.php:\n  787  \n  788  /**\n  789:  * Generates Publishing Soon and Recently Published sections.\n  790   *\n  791   * @since 3.8.0\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\includes\\media.php:\n 2888  \t\t * @param array $fields An array of the attachment metadata keys and labels.\n 2889  \t\t */\n 2890: \t\t$fields = apply_filters( 'media_submitbox_misc_sections', array(\n 2891  \t\t\t'length_formatted' => __( 'Length:' ),\n 2892  \t\t\t'bitrate'          => __( 'Bitrate:' ),\n ....\n 2926  \t\t * @param array $fields An array of the attachment metadata keys and labels.\n 2927  \t\t */\n 2928: \t\t$audio_fields = apply_filters( 'audio_submitbox_misc_sections', array(\n 2929  \t\t\t'dataformat' => __( 'Audio Format:' ),\n 2930  \t\t\t'codec'      => __( 'Audio Codec:' )\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\includes\\plugin-install.php:\n   70   *         @type bool $short_description Whether to return the plugin short description. Default true.\n   71   *         @type bool $description       Whether to return the plugin full description. Default false.\n   72:  *         @type bool $sections          Whether to return the plugin readme sections: description, installation,\n   73   *                                       FAQ, screenshots, other notes, and changelog. Default false.\n   74   *         @type bool $tested            Whether to return the 'Compatible up to' value. Default true.\n   ..\n  469  \n  470  \t// Sanitize HTML\n  471: \tforeach ( (array) $api->sections as $section_name => $content ) {\n  472: \t\t$api->sections[$section_name] = wp_kses( $content, $plugins_allowedtags );\n  473  \t}\n  474  \n  ...\n  482  \n  483  \t$section = isset( $_REQUEST['section'] ) ? wp_unslash( $_REQUEST['section'] ) : 'description'; // Default to the Description tab, Do not translate, API returns English.\n  484: \tif ( empty( $section ) || ! isset( $api->sections[ $section ] ) ) {\n  485: \t\t$section_titles = array_keys( (array) $api->sections );\n  486  \t\t$section = reset( $section_titles );\n  487  \t}\n  ...\n  513  \techo \"<div id='{$_tab}-tabs' class='{$_with_banner}'>\\n\";\n  514  \n  515: \tforeach ( (array) $api->sections as $section_name => $content ) {\n  516  \t\tif ( 'reviews' === $section_name && ( empty( $api->ratings ) || 0 === array_sum( (array) $api->ratings ) ) ) {\n  517  \t\t\tcontinue;\n  ...\n  637  \t}\n  638  \n  639: \tforeach ( (array) $api->sections as $section_name => $content ) {\n  640  \t\t$content = links_add_base_url( $content, 'https://wordpress.org/plugins/' . $api->slug . '/' );\n  641  \t\t$content = links_add_target( $content, '_blank' );\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\includes\\template.php:\n  893   *                                              screen. Post edit screen contexts include 'normal', 'side',\n  894   *                                              and 'advanced'. Comments screen contexts include 'normal'\n  895:  *                                              and 'side'. Menus meta boxes (accordion sections) all use\n  896   *                                              the 'side' context. Global default is 'advanced'.\n  897   * @param string                 $priority      Optional. The priority within the context where the boxes\n  ...\n 1072   *                                        Contexts vary from screen to screen. Post edit screen contexts\n 1073   *                                        include 'normal', 'side', and 'advanced'. Comments screen contexts\n 1074:  *                                        include 'normal' and 'side'. Menus meta boxes (accordion sections)\n 1075   *                                        all use the 'side' context.\n 1076   */\n ....\n 1119   * @param string        $context The meta box context.\n 1120   * @param mixed         $object  gets passed to the section callback function as first parameter.\n 1121:  * @return int number of meta boxes as accordion sections.\n 1122   */\n 1123: function do_accordion_sections( $screen, $context, $object ) {\n 1124  \tglobal $wp_meta_boxes;\n 1125  \n ....\n 1182   * Add a new section to a settings page.\n 1183   *\n 1184:  * Part of the Settings API. Use this to define new settings sections for an admin page.\n 1185:  * Show settings sections in your admin page callback function with do_settings_sections().\n 1186   * Add settings fields to your section with add_settings_field()\n 1187   *\n ....\n 1192   * @since 2.7.0\n 1193   *\n 1194:  * @global $wp_settings_sections Storage array of all settings sections added to admin pages\n 1195   *\n 1196   * @param string   $id       Slug-name to identify the section. Used in the 'id' attribute of tags.\n ....\n 1202   */\n 1203  function add_settings_section($id, $title, $callback, $page) {\n 1204: \tglobal $wp_settings_sections;\n 1205  \n 1206  \tif ( 'misc' == $page ) {\n ....\n 1214  \t}\n 1215  \n 1216: \t$wp_settings_sections[$page][$id] = array('id' => $id, 'title' => $title, 'callback' => $callback);\n 1217  }\n 1218  \n ....\n 1222   * Part of the Settings API. Use this to define a settings field that will show\n 1223   * as part of a settings section inside a settings page. The fields are shown using\n 1224:  * do_settings_fields() in do_settings-sections()\n 1225   *\n 1226   * The $callback argument should be the name of a function that echoes out the\n ....\n 1231   * @since 4.2.0 The `$class` argument was added.\n 1232   *\n 1233:  * @global $wp_settings_fields Storage array of settings fields and info about their pages/sections\n 1234   *\n 1235   * @param string   $id       Slug-name to identify the field. Used in the 'id' attribute of tags.\n ....\n 1269  \n 1270  /**\n 1271:  * Prints out all settings sections added to a particular settings page\n 1272   *\n 1273   * Part of the Settings API. Use this in a settings page callback function\n 1274:  * to output all the sections and fields that were added to that $page with\n 1275   * add_settings_section() and add_settings_field()\n 1276   *\n 1277:  * @global $wp_settings_sections Storage array of all settings sections added to admin pages\n 1278:  * @global $wp_settings_fields Storage array of settings fields and info about their pages/sections\n 1279   * @since 2.7.0\n 1280   *\n 1281:  * @param string $page The slug name of the page whose settings sections you want to output\n 1282   */\n 1283: function do_settings_sections( $page ) {\n 1284: \tglobal $wp_settings_sections, $wp_settings_fields;\n 1285  \n 1286: \tif ( ! isset( $wp_settings_sections[$page] ) )\n 1287  \t\treturn;\n 1288  \n 1289: \tforeach ( (array) $wp_settings_sections[$page] as $section ) {\n 1290  \t\tif ( $section['title'] )\n 1291  \t\t\techo \"<h2>{$section['title']}</h2>\\n\";\n ....\n 1306   *\n 1307   * Part of the Settings API. Use this in a settings page to output\n 1308:  * a specific section. Should normally be called by do_settings_sections()\n 1309   * rather than directly.\n 1310   *\n 1311:  * @global $wp_settings_fields Storage array of settings fields and their pages/sections\n 1312   *\n 1313   * @since 2.7.0\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\includes\\theme-install.php:\n   15  );\n   16  \n   17: $theme_field_defaults = array( 'description' => true, 'sections' => false, 'tested' => true, 'requires' => true,\n   18  \t'rating' => true, 'downloaded' => true, 'downloadlink' => true, 'last_updated' => true, 'homepage' => true,\n   19  \t'tags' => true, 'num_ratings' => true\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\includes\\theme.php:\n  377   *\n  378   *         @type bool $description        Whether to return the theme full description. Default false.\n  379:  *         @type bool $sections           Whether to return the theme readme sections: description, installation,\n  380   *                                        FAQ, screenshots, other notes, and changelog. Default false.\n  381   *         @type bool $rating             Whether to return the rating in percent and total number of ratings.\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\js\\accordion.js:\n   33  \t$( document ).ready( function () {\n   34  \n   35: \t\t// Expand/Collapse accordion sections on click.\n   36  \t\t$( '.accordion-container' ).on( 'click keydown', '.accordion-section-title', function( e ) {\n   37  \t\t\tif ( e.type === 'keydown' && 13 !== e.which ) { // \"return\" key\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\js\\customize-controls.js:\n  134  \n  135  \t/**\n  136: \t * Stable sort for Panels, Sections, and Controls.\n  137  \t *\n  138  \t * If a.priority() === b.priority(), then sort by their respective params.instanceNumber.\n  ...\n  343  \t\t\t\t});\n  344  \n  345: \t\t\t\t// Collapse any expanded sections inside of this panel first before deactivating.\n  346  \t\t\t\tif ( ! active ) {\n  347: \t\t\t\t\t_.each( construct.sections(), function( section ) {\n  348  \t\t\t\t\t\tsection.collapse( { duration: 0 } );\n  349  \t\t\t\t\t} );\n  ...\n  612  \t\t\tvar section = this;\n  613  \n  614: \t\t\t// Expand/Collapse accordion sections on click.\n  615  \t\t\tsection.container.find( '.accordion-section-title, .customize-section-back' ).on( 'click keydown', function( event ) {\n  616  \t\t\t\tif ( api.utils.isKeydownButNotEnterEvent( event ) ) {\n  ...\n  958  \t\t\tif ( expanded ) {\n  959  \n  960: \t\t\t\t// Collapse any sibling sections/panels\n  961  \t\t\t\tapi.section.each( function ( otherSection ) {\n  962  \t\t\t\t\tif ( otherSection !== panel ) {\n  ...\n 1255  \t\t\tvar meta, panel = this;\n 1256  \n 1257: \t\t\t// Expand/Collapse accordion sections on click.\n 1258  \t\t\tpanel.container.find( '.accordion-section-title' ).on( 'click keydown', function( event ) {\n 1259  \t\t\t\tif ( api.utils.isKeydownButNotEnterEvent( event ) ) {\n ....\n 1307  \n 1308  \t\t/**\n 1309: \t\t * Get the sections that are associated with this panel, sorted by their priority Value.\n 1310  \t\t *\n 1311  \t\t * @since 4.1.0\n ....\n 1313  \t\t * @returns {Array}\n 1314  \t\t */\n 1315: \t\tsections: function () {\n 1316  \t\t\treturn this._children( 'panel', 'section' );\n 1317  \t\t},\n 1318  \n 1319  \t\t/**\n 1320: \t\t * Return whether this panel has any active sections.\n 1321  \t\t *\n 1322  \t\t * @since 4.1.0\n ....\n 1326  \t\tisContextuallyActive: function () {\n 1327  \t\t\tvar panel = this,\n 1328: \t\t\t\tsections = panel.sections(),\n 1329  \t\t\t\tactiveCount = 0;\n 1330: \t\t\t_( sections ).each( function ( section ) {\n 1331  \t\t\t\tif ( section.active() && section.isContextuallyActive() ) {\n 1332  \t\t\t\t\tactiveCount += 1;\n ....\n 1371  \t\t\tif ( expanded ) {\n 1372  \n 1373: \t\t\t\t// Collapse any sibling sections/panels\n 1374  \t\t\t\tapi.section.each( function ( section ) {\n 1375  \t\t\t\t\tif ( panel.id !== section.panel() ) {\n ....\n 2873  \tapi.defaultConstructor = api.Setting;\n 2874  \n 2875: \t// Create the collections for Controls, Sections and Panels.\n 2876  \tapi.control = new api.Values({ defaultConstructor: api.Control });\n 2877  \tapi.section = new api.Values({ defaultConstructor: api.Section });\n ....\n 2956  \n 2957  \t\t\t\t/*\n 2958: \t\t\t\t * Walk over all panels, sections, and controls and set their\n 2959  \t\t\t\t * respective active states to true if the preview explicitly\n 2960  \t\t\t\t * indicates as such.\n ....\n 2962  \t\t\t\tvar constructs = {\n 2963  \t\t\t\t\tpanel: data.activePanels,\n 2964: \t\t\t\t\tsection: data.activeSections,\n 2965  \t\t\t\t\tcontrol: data.activeControls\n 2966  \t\t\t\t};\n ....\n 3518  \n 3519  \t/**\n 3520: \t * Sort panels, sections, controls by priorities. Hide empty sections and panels.\n 3521  \t *\n 3522  \t * @since 4.1.0\n ....\n 3530  \t\t}\n 3531  \n 3532: \t\t// Sort the sections within each panel\n 3533  \t\tapi.panel.each( function ( panel ) {\n 3534: \t\t\tvar sections = panel.sections(),\n 3535: \t\t\t\tsectionContainers = _.pluck( sections, 'container' );\n 3536  \t\t\trootNodes.push( panel );\n 3537  \t\t\tappendContainer = panel.container.find( 'ul:first' );\n 3538  \t\t\tif ( ! api.utils.areElementListsEqual( sectionContainers, appendContainer.children( '[id]' ) ) ) {\n 3539: \t\t\t\t_( sections ).each( function ( section ) {\n 3540  \t\t\t\t\tappendContainer.append( section.container );\n 3541  \t\t\t\t} );\n ....\n 3560  \t\t} );\n 3561  \n 3562: \t\t// Sort the root panels and sections\n 3563  \t\trootNodes.sort( api.utils.prioritySort );\n 3564  \t\trootContainers = _.pluck( rootNodes, 'container' );\n ....\n 3571  \t\t}\n 3572  \n 3573: \t\t// Now re-trigger the active Value callbacks to that the panels and sections can decide whether they can be rendered\n 3574  \t\tapi.panel.each( function ( panel ) {\n 3575  \t\t\tvar value = panel.active();\n ....\n 3833  \t\t});\n 3834  \n 3835: \t\t// Create Sections\n 3836: \t\t$.each( api.settings.sections, function ( id, data ) {\n 3837  \t\t\tvar constructor = api.sectionConstructor[ data.type ] || api.Section,\n 3838  \t\t\t\tsection;\n ....\n 3971  \t\t// Keyboard shortcuts - esc to exit section/panel.\n 3972  \t\t$( 'body' ).on( 'keydown', function( event ) {\n 3973: \t\t\tvar collapsedObject, expandedControls = [], expandedSections = [], expandedPanels = [];\n 3974  \n 3975  \t\t\tif ( 27 !== event.which ) { // Esc.\n ....\n 3977  \t\t\t}\n 3978  \n 3979: \t\t\t// Check for expanded expandable controls (e.g. widgets and nav menus items), sections, and panels.\n 3980  \t\t\tapi.control.each( function( control ) {\n 3981  \t\t\t\tif ( control.expanded && control.expanded() && _.isFunction( control.collapse ) ) {\n ....\n 3985  \t\t\tapi.section.each( function( section ) {\n 3986  \t\t\t\tif ( section.expanded() ) {\n 3987: \t\t\t\t\texpandedSections.push( section );\n 3988  \t\t\t\t}\n 3989  \t\t\t});\n ....\n 3994  \t\t\t});\n 3995  \n 3996: \t\t\t// Skip collapsing expanded controls if there are no expanded sections.\n 3997: \t\t\tif ( expandedControls.length > 0 && 0 === expandedSections.length ) {\n 3998  \t\t\t\texpandedControls.length = 0;\n 3999  \t\t\t}\n 4000  \n 4001  \t\t\t// Collapse the most granular expanded object.\n 4002: \t\t\tcollapsedObject = expandedControls[0] || expandedSections[0] || expandedPanels[0];\n 4003  \t\t\tif ( collapsedObject ) {\n 4004  \t\t\t\tcollapsedObject.collapse();\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\js\\customize-controls.min.js:\n    1: !function(a,b){var c,d,e=wp.customize;e.Setting=e.Value.extend({initialize:function(a,b,c){e.Value.prototype.initialize.call(this,b,c),this.id=a,this.transport=this.transport||\"refresh\",this._dirty=c.dirty||!1,this.notifications=new e.Values({defaultConstructor:e.Notification}),this.bind(this.preview)},preview:function(){switch(this.transport){case\"refresh\":return this.previewer.refresh();case\"postMessage\":return this.previewer.send(\"setting\",[this.id,this()])}},findControls:function(){var a=this,b=[];return e.control.each(function(c){_.each(c.settings,function(d){d.id===a.id&&b.push(c)})}),b}}),e.utils={},e.utils.bubbleChildValueChanges=function(a,c){b.each(c,function(b,c){a[c].bind(function(b,c){a.parent&&b!==c&&a.parent.trigger(\"change\",a)})})},d=function(a){var b,c,d,f;b=this,a=a||{},d=function(){var a;a=b.extended(e.Panel)&&b.expanded&&b.expanded()?b.container.find(\"ul.control-panel-content\"):b.extended(e.Section)&&b.expanded&&b.expanded()?b.container.find(\"ul.accordion-section-content\"):b.container,f=a.find(\".control-focus:first\"),0===f.length&&(f=a.find(\"input, select, textarea, button, object, a[href], [tabindex]\").filter(\":visible\").first()),f.focus()},a.completeCallback?(c=a.completeCallback,a.completeCallback=function(){d(),c()}):a.completeCallback=d,b.expand?b.expand(a):a.completeCallback()},e.utils.prioritySort=function(a,b){return a.priority()===b.priority()&&\"number\"==typeof a.params.instanceNumber&&\"number\"==typeof b.params.instanceNumber?a.params.instanceNumber-b.params.instanceNumber:a.priority()-b.priority()},e.utils.isKeydownButNotEnterEvent=function(a){return\"keydown\"===a.type&&13!==a.which},e.utils.areElementListsEqual=function(a,c){var d=a.length===c.length&&-1===_.indexOf(_.map(_.zip(a,c),function(a){return b(a[0]).is(a[1])}),!1);return d},c=e.Class.extend({defaultActiveArguments:{duration:\"fast\",completeCallback:b.noop},defaultExpandedArguments:{duration:\"fast\",completeCallback:b.noop},containerType:\"container\",defaults:{title:\"\",description:\"\",priority:100,type:\"default\",content:null,active:!0,instanceNumber:null},initialize:function(a,c){var d=this;d.id=a,c=c||{},c.params=_.defaults(c.params||{},d.defaults),b.extend(d,c),d.templateSelector=\"customize-\"+d.containerType+\"-\"+d.params.type,d.container=b(d.params.content),0===d.container.length&&(d.container=b(d.getContainer())),d.deferred={embedded:new b.Deferred},d.priority=new e.Value,d.active=new e.Value,d.activeArgumentsQueue=[],d.expanded=new e.Value,d.expandedArgumentsQueue=[],d.active.bind(function(a){var c=d.activeArgumentsQueue.shift();c=b.extend({},d.defaultActiveArguments,c),a=a&&d.isContextuallyActive(),d.onChangeActive(a,c)}),d.expanded.bind(function(a){var c=d.expandedArgumentsQueue.shift();c=b.extend({},d.defaultExpandedArguments,c),d.onChangeExpanded(a,c)}),d.deferred.embedded.done(function(){d.attachEvents()}),e.utils.bubbleChildValueChanges(d,[\"priority\",\"active\"]),d.priority.set(d.params.priority),d.active.set(d.params.active),d.expanded.set(!1)},ready:function(){},_children:function(a,b){var c=this,d=[];return e[b].each(function(b){b[a].get()===c.id&&d.push(b)}),d.sort(e.utils.prioritySort),d},isContextuallyActive:function(){throw new Error(\"Container.isContextuallyActive() must be overridden in a subclass.\")},onChangeActive:function(a,c){var d,f,g=this;return c.unchanged?void(c.completeCallback&&c.completeCallback()):(d=\"resolved\"===e.previewer.deferred.active.state()?c.duration:0,g.extended(e.Panel)&&(e.panel.each(function(a){a!==g&&a.expanded()&&(f=a,d=0)}),a||_.each(g.sections(),function(a){a.collapse({duration:0})})),b.contains(document,g.container[0])?a?g.container.stop(!0,!0).slideDown(d,c.completeCallback):g.expanded()?g.collapse({duration:d,completeCallback:function(){g.container.stop(!0,!0).slideUp(d,c.completeCallback)}}):g.container.stop(!0,!0).slideUp(d,c.completeCallback):(g.container.toggle(a),c.completeCallback&&c.completeCallback()),void(f&&f._recalculateTopMargin()))},_toggleActive:function(a,b){var c=this;return b=b||{},a&&this.active.get()||!a&&!this.active.get()?(b.unchanged=!0,c.onChangeActive(c.active.get(),b),!1):(b.unchanged=!1,this.activeArgumentsQueue.push(b),this.active.set(a),!0)},activate:function(a){return this._toggleActive(!0,a)},deactivate:function(a){return this._toggleActive(!1,a)},onChangeExpanded:function(){throw new Error(\"Must override with subclass.\")},_toggleExpanded:function(a,b){var c,d=this;return b=b||{},c=b.completeCallback,!(a&&!d.active())&&(b.completeCallback=function(){c&&c.apply(d,arguments),a?d.container.trigger(\"expanded\"):d.container.trigger(\"collapsed\")},a&&d.expanded.get()||!a&&!d.expanded.get()?(b.unchanged=!0,d.onChangeExpanded(d.expanded.get(),b),!1):(b.unchanged=!1,d.expandedArgumentsQueue.push(b),d.expanded.set(a),!0))},expand:function(a){return this._toggleExpanded(!0,a)},collapse:function(a){return this._toggleExpanded(!1,a)},focus:d,getContainer:function(){var a,c=this;return a=0!==b(\"#tmpl-\"+c.templateSelector).length?wp.template(c.templateSelector):wp.template(\"customize-\"+c.containerType+\"-default\"),a&&c.container?b.trim(a(c.params)):\"<li></li>\"}}),e.Section=c.extend({containerType:\"section\",defaults:{title:\"\",description:\"\",priority:100,type:\"default\",content:null,active:!0,instanceNumber:null,panel:null,customizeAction:\"\"},initialize:function(a,d){var f=this;c.prototype.initialize.call(f,a,d),f.id=a,f.panel=new e.Value,f.panel.bind(function(a){b(f.container).toggleClass(\"control-subsection\",!!a)}),f.panel.set(f.params.panel||\"\"),e.utils.bubbleChildValueChanges(f,[\"panel\"]),f.embed(),f.deferred.embedded.done(function(){f.ready()})},embed:function(){var a,c=this;a=function(a){var d;a?e.panel(a,function(a){a.deferred.embedded.done(function(){d=a.container.find(\"ul:first\"),c.container.parent().is(d)||d.append(c.container),c.deferred.embedded.resolve()})}):(d=b(\"#customize-theme-controls\").children(\"ul\"),c.container.parent().is(d)||d.append(c.container),c.deferred.embedded.resolve())},c.panel.bind(a),a(c.panel.get()),c.deferred.embedded.done(function(){e.bind(\"pane-contents-reflowed\",_.debounce(function(){c._recalculateTopMargin()},100))})},attachEvents:function(){var a=this;a.container.find(\".accordion-section-title, .customize-section-back\").on(\"click keydown\",function(b){e.utils.isKeydownButNotEnterEvent(b)||(b.preventDefault(),a.expanded()?a.collapse():a.expand())})},isContextuallyActive:function(){var a=this,b=a.controls(),c=0;return _(b).each(function(a){a.active()&&(c+=1)}),0!==c},controls:function(){return this._children(\"section\",\"control\")},onChangeExpanded:function(a,c){var d,f,g,h,i=this,j=i.container.closest(\".wp-full-overlay-sidebar-content\"),k=i.container.find(\".accordion-section-content\"),l=i.container.closest(\".wp-full-overlay\"),m=i.container.find(\".customize-section-back\"),n=i.container.find(\".accordion-section-title\").first(),o=b(\"#customize-header-actions\").height();a&&!i.container.hasClass(\"open\")?(c.unchanged?f=c.completeCallback:(j.scrollTop(0),d=function(){var a,b;a=window.matchMedia||window.msMatchMedia,b=90,a&&a(\"(max-width: 640px)\").matches&&(b=45),k.css(\"height\",window.innerHeight-b)},f=function(){i.container.addClass(\"open\"),l.addClass(\"section-open\"),g=k.offset().top,h=j.scrollTop(),k.css(\"margin-top\",o-g-h),d(),n.attr(\"tabindex\",\"-1\"),m.attr(\"tabindex\",\"0\"),m.focus(),c.completeCallback&&c.completeCallback(),b(window).on(\"resize.customizer-section\",_.debounce(d,100)),setTimeout(_.bind(i._recalculateTopMargin,i),0)}),c.allowMultiple||e.section.each(function(a){a!==i&&a.collapse({duration:c.duration})}),i.panel()?e.panel(i.panel()).expand({duration:c.duration,completeCallback:f}):(e.panel.each(function(a){a.collapse()}),f())):!a&&i.container.hasClass(\"open\")?(i.container.removeClass(\"open\"),l.removeClass(\"section-open\"),k.css(\"margin-top\",\"\"),j.scrollTop(0),m.attr(\"tabindex\",\"-1\"),n.attr(\"tabindex\",\"0\"),n.focus(),c.completeCallback&&c.completeCallback(),b(window).off(\"resize.customizer-section\")):c.completeCallback&&c.completeCallback()},_recalculateTopMargin:function(){var a,c,d,e=this;a=e.container.find(\".accordion-section-content\"),0!==a.length&&(d=b(\"#customize-header-actions\").height(),c=a.offset().top-d,0<c&&a.css(\"margin-top\",parseInt(a.css(\"margin-top\"),10)-c))}}),e.ThemesSection=e.Section.extend({currentTheme:\"\",overlay:\"\",template:\"\",screenshotQueue:null,$window:b(window),initialize:function(){return this.$customizeSidebar=b(\".wp-full-overlay-sidebar-content:first\"),e.Section.prototype.initialize.apply(this,arguments)},ready:function(){var a=this;a.overlay=a.container.find(\".theme-overlay\"),a.template=wp.template(\"customize-themes-details-view\"),b(\"body\").on(\"keyup\",function(b){a.overlay.find(\".theme-wrap\").is(\":visible\")&&(39===b.keyCode&&a.nextTheme(),37===b.keyCode&&a.previousTheme(),27===b.keyCode&&a.closeDetails())}),_.bindAll(this,\"renderScreenshots\")},isContextuallyActive:function(){return this.active()},attachEvents:function(){var a=this;a.container.find(\".change-theme, .customize-theme\").on(\"click keydown\",function(b){e.utils.isKeydownButNotEnterEvent(b)||(b.preventDefault(),a.expanded()?a.collapse():a.expand())}),a.container.on(\"click keydown\",\".left\",function(b){e.utils.isKeydownButNotEnterEvent(b)||(b.preventDefault(),a.previousTheme())}),a.container.on(\"click keydown\",\".right\",function(b){e.utils.isKeydownButNotEnterEvent(b)||(b.preventDefault(),a.nextTheme())}),a.container.on(\"click keydown\",\".theme-backdrop, .close\",function(b){e.utils.isKeydownButNotEnterEvent(b)||(b.preventDefault(),a.closeDetails())});var b=_.throttle(_.bind(a.renderScreenshots,this),100);a.container.on(\"input\",\"#themes-filter\",function(c){var d,e=c.currentTarget.value.toLowerCase().trim().replace(\"-\",\" \"),f=a.controls();_.each(f,function(a){a.filter(e)}),b(),d=a.container.find(\"li.customize-control:visible\").length,a.container.find(\".theme-count\").text(d)}),e.bind(\"ready\",function(){_.each(a.controls().slice(0,3),function(a){var b,c=a.params.theme.screenshot[0];c&&(b=new Image,b.src=c)})})},onChangeExpanded:function(a,c){if(c.unchanged)return void(c.completeCallback&&c.completeCallback());var d,f,g=this,h=g.container.closest(\".accordion-section\"),i=h.closest(\".wp-full-overlay\"),j=h.closest(\".wp-full-overlay-sidebar-content\"),k=j.find(\".open\"),l=h.find(\".customize-theme\"),m=h.find(\".change-theme\"),n=h.find(\".control-panel-content\");a?(e.section.each(function(a){a!==g&&a.collapse({duration:c.duration})}),e.panel.each(function(a){a.collapse({duration:0})}),n.show(0,function(){d=n.offset().top,f=j.scrollTop(),n.css(\"margin-top\",b(\"#customize-header-actions\").height()-d-f),h.addClass(\"current-panel\"),i.addClass(\"in-themes-panel\"),j.scrollTop(0),_.delay(g.renderScreenshots,10),g.$customizeSidebar.on(\"scroll.customize-themes-section\",_.throttle(g.renderScreenshots,300)),c.completeCallback&&c.completeCallback()}),l.focus()):(k.removeClass(\"open\"),h.removeClass(\"current-panel\"),i.removeClass(\"in-themes-panel\"),g.$customizeSidebar.off(\"scroll.customize-themes-section\"),n.delay(180).hide(0,function(){n.css(\"margin-top\",\"inherit\"),c.completeCallback&&c.completeCallback()}),l.attr(\"tabindex\",\"0\"),m.focus(),j.scrollTop(0))},_recalculateTopMargin:function(){e.Panel.prototype._recalculateTopMargin.call(this)},renderScreenshots:function(){var a=this;null===a.screenshotQueue&&(a.screenshotQueue=a.controls()),a.screenshotQueue.length&&(a.screenshotQueue=_.filter(a.screenshotQueue,function(b){var c=b.container.find(\".theme-screenshot\"),d=c.find(\"img\");if(!d.length)return!1;if(d.is(\":hidden\"))return!0;var e=a.$window.scrollTop(),f=e+a.$window.height(),g=d.offset().top,h=c.height(),i=g+h,j=3*h,k=i>=e-j&&g<=f+j;return k&&b.container.trigger(\"render-screenshot\"),!k}))},nextTheme:function(){var a=this;a.getNextTheme()&&a.showDetails(a.getNextTheme(),function(){a.overlay.find(\".right\").focus()})},getNextTheme:function(){var a,b;return a=e.control(\"theme_\"+this.currentTheme),b=a.container.next(\"li.customize-control-theme\"),!!b.length&&(b=b[0].id.replace(\"customize-control-\",\"\"),a=e.control(b),a.params.theme)},previousTheme:function(){var a=this;a.getPreviousTheme()&&a.showDetails(a.getPreviousTheme(),function(){a.overlay.find(\".left\").focus()})},getPreviousTheme:function(){var a,b;return a=e.control(\"theme_\"+this.currentTheme),b=a.container.prev(\"li.customize-control-theme\"),!!b.length&&(b=b[0].id.replace(\"customize-control-\",\"\"),a=e.control(b),a.params.theme)},updateLimits:function(){this.getNextTheme()||this.overlay.find(\".right\").addClass(\"disabled\"),this.getPreviousTheme()||this.overlay.find(\".left\").addClass(\"disabled\")},showDetails:function(a,c){var d=this;c=c||function(){},d.currentTheme=a.id,d.overlay.html(d.template(a)).fadeIn(\"fast\").focus(),b(\"body\").addClass(\"modal-open\"),d.containFocus(d.overlay),d.updateLimits(),c()},closeDetails:function(){b(\"body\").removeClass(\"modal-open\"),this.overlay.fadeOut(\"fast\"),e.control(\"theme_\"+this.currentTheme).focus()},containFocus:function(a){var c;a.on(\"keydown\",function(d){if(9===d.keyCode)return c=b(\":tabbable\",a),c.last()[0]!==d.target||d.shiftKey?c.first()[0]===d.target&&d.shiftKey?(c.last().focus(),!1):void 0:(c.first().focus(),!1)})}}),e.Panel=c.extend({containerType:\"panel\",initialize:function(a,b){var d=this;c.prototype.initialize.call(d,a,b),d.embed(),d.deferred.embedded.done(function(){d.ready()})},embed:function(){var a=this,c=b(\"#customize-theme-controls > ul\");a.container.parent().is(c)||(c.append(a.container),a.renderContent()),e.bind(\"pane-contents-reflowed\",_.debounce(function(){a._recalculateTopMargin()},100)),a.deferred.embedded.resolve()},attachEvents:function(){var a,c=this;c.container.find(\".accordion-section-title\").on(\"click keydown\",function(a){e.utils.isKeydownButNotEnterEvent(a)||(a.preventDefault(),c.expanded()||c.expand())}),c.container.find(\".customize-panel-back\").on(\"click keydown\",function(a){e.utils.isKeydownButNotEnterEvent(a)||(a.preventDefault(),c.expanded()&&c.collapse())}),a=c.container.find(\".panel-meta:first\"),a.find(\"> .accordion-section-title .customize-help-toggle\").on(\"click keydown\",function(d){if(!e.utils.isKeydownButNotEnterEvent(d)&&(d.preventDefault(),a=c.container.find(\".panel-meta\"),!a.hasClass(\"cannot-expand\"))){var f=a.find(\".customize-panel-description:first\");a.hasClass(\"open\")?(a.toggleClass(\"open\"),f.slideUp(c.defaultExpandedArguments.duration),b(this).attr(\"aria-expanded\",!1)):(f.slideDown(c.defaultExpandedArguments.duration),a.toggleClass(\"open\"),b(this).attr(\"aria-expanded\",!0))}})},sections:function(){return this._children(\"panel\",\"section\")},isContextuallyActive:function(){var a=this,b=a.sections(),c=0;return _(b).each(function(a){a.active()&&a.isContextuallyActive()&&(c+=1)}),0!==c},onChangeExpanded:function(a,c){if(c.unchanged)return void(c.completeCallback&&c.completeCallback());var d,f,g=this,h=g.container.closest(\".accordion-section\"),i=h.closest(\".wp-full-overlay\"),j=h.closest(\".wp-full-overlay-sidebar-content\"),k=j.find(\".open\"),l=i.find(\"#customize-theme-controls > ul > .accordion-section > .accordion-section-title\"),m=h.find(\".customize-panel-back\"),n=h.find(\".accordion-section-title\").first(),o=h.find(\".control-panel-content\"),p=b(\"#customize-header-actions\").height();a?(e.section.each(function(a){g.id!==a.panel()&&a.collapse({duration:0})}),e.panel.each(function(a){g!==a&&a.collapse({duration:0})}),o.show(0,function(){o.parent().show(),d=o.offset().top,f=j.scrollTop(),o.css(\"margin-top\",p-d-f),h.addClass(\"current-panel\"),i.addClass(\"in-sub-panel\"),j.scrollTop(0),c.completeCallback&&c.completeCallback()}),l.attr(\"tabindex\",\"-1\"),m.attr(\"tabindex\",\"0\"),m.focus(),g._recalculateTopMargin()):(k.removeClass(\"open\"),h.removeClass(\"current-panel\"),i.removeClass(\"in-sub-panel\"),o.delay(180).hide(0,function(){o.css(\"margin-top\",\"inherit\"),c.completeCallback&&c.completeCallback()}),l.attr(\"tabindex\",\"0\"),m.attr(\"tabindex\",\"-1\"),n.focus(),j.scrollTop(0))},_recalculateTopMargin:function(){var a,c,d,e=this;a=b(\"#customize-header-actions\").height(),d=e.container.closest(\".accordion-section\"),c=d.find(\".control-panel-content\"),c.css(\"margin-top\",parseInt(c.css(\"margin-top\"),10)-(c.offset().top-a))},renderContent:function(){var a,c=this;a=0!==b(\"#tmpl-\"+c.templateSelector+\"-content\").length?wp.template(c.templateSelector+\"-content\"):wp.template(\"customize-panel-default-content\"),a&&c.container&&c.container.find(\".accordion-sub-container\").html(a(c.params))}}),e.Control=e.Class.extend({defaultActiveArguments:{duration:\"fast\",completeCallback:b.noop},initialize:function(a,c){var d,f,g,h=this;h.params={},b.extend(h,c||{}),h.id=a,h.selector=\"#customize-control-\"+a.replace(/\\]/g,\"\").replace(/\\[/g,\"-\"),h.templateSelector=\"customize-control-\"+h.params.type+\"-content\",h.container=b(h.params.content?h.params.content:h.selector),h.deferred={embedded:new b.Deferred},h.section=new e.Value,h.priority=new e.Value,h.active=new e.Value,h.activeArgumentsQueue=[],h.notifications=new e.Values({defaultConstructor:e.Notification}),h.elements=[],d=h.container.find(\"[data-customize-setting-link]\"),f={},d.each(function(){var a,c=b(this);if(c.is(\":radio\")){if(a=c.prop(\"name\"),f[a])return;f[a]=!0,c=d.filter('[name=\"'+a+'\"]')}e(c.data(\"customizeSettingLink\"),function(a){var b=new e.Element(c);h.elements.push(b),b.sync(a),b.set(a())})}),h.active.bind(function(a){var c=h.activeArgumentsQueue.shift();c=b.extend({},h.defaultActiveArguments,c),h.onChangeActive(a,c)}),h.section.set(h.params.section),h.priority.set(isNaN(h.params.priority)?10:h.params.priority),h.active.set(h.params.active),e.utils.bubbleChildValueChanges(h,[\"section\",\"priority\",\"active\"]),g=b.map(h.params.settings,function(a){return a}),0===g.length?(h.setting=null,h.settings={},h.embed()):e.apply(e,g.concat(function(){var a;h.settings={};for(a in h.params.settings)h.settings[a]=e(h.params.settings[a]);h.setting=h.settings[\"default\"]||null,_.each(h.settings,function(a){a.notifications.bind(\"add\",function(b){var c,d,f;d=a.id+\":\"+b.code,f=_.extend({},b,{setting:a.id}),c=new e.Notification(d,f),h.notifications.add(c.code,c)}),a.notifications.bind(\"remove\",function(b){h.notifications.remove(a.id+\":\"+b.code)})}),h.embed()})),h.deferred.embedded.done(function(){var a=_.debounce(function(){h.renderNotifications()});h.notifications.bind(\"add\",function(b){wp.a11y.speak(b.message,\"assertive\"),a()}),h.notifications.bind(\"remove\",a),h.renderNotifications(),h.ready()})},embed:function(){var a,b=this;a=function(a){var c;a&&e.section(a,function(a){a.deferred.embedded.done(function(){c=a.container.find(\"ul:first\"),b.container.parent().is(c)||(c.append(b.container),b.renderContent()),b.deferred.embedded.resolve()})})},b.section.bind(a),a(b.section.get())},ready:function(){},getNotificationsContainerElement:function(){var a,c,d=this;return c=d.container.find(\".customize-control-notifications-container:first\"),c.length?c:(c=b('<div class=\"customize-control-notifications-container\"></div>'),d.container.hasClass(\"customize-control-nav_menu_item\")?d.container.find(\".menu-item-settings:first\").prepend(c):d.container.hasClass(\"customize-control-widget_form\")?d.container.find(\".widget-inside:first\").prepend(c):(a=d.container.find(\".customize-control-title\"),a.length?a.after(c):d.container.prepend(c)),c)},renderNotifications:function(){var a,c,d=this,e=!1;a=d.getNotificationsContainerElement(),a&&a.length&&(c=[],d.notifications.each(function(a){c.push(a),\"error\"===a.type&&(e=!0)}),0===c.length?a.stop().slideUp(\"fast\"):a.stop().slideDown(\"fast\",null,function(){b(this).css(\"height\",\"auto\")}),d.notificationsTemplate||(d.notificationsTemplate=wp.template(\"customize-control-notifications\")),d.container.toggleClass(\"has-notifications\",0!==c.length),d.container.toggleClass(\"has-error\",e),a.empty().append(b.trim(d.notificationsTemplate({notifications:c,altNotice:Boolean(d.altNotice)}))))},expand:function(a){e.section(this.section()).expand(a)},focus:d,onChangeActive:function(a,c){return c.unchanged?void(c.completeCallback&&c.completeCallback()):void(b.contains(document,this.container[0])?a?this.container.slideDown(c.duration,c.completeCallback):this.container.slideUp(c.duration,c.completeCallback):(this.container.toggle(a),c.completeCallback&&c.completeCallback()))},toggle:function(a){return this.onChangeActive(a,this.defaultActiveArguments)},activate:c.prototype.activate,deactivate:c.prototype.deactivate,_toggleActive:c.prototype._toggleActive,dropdownInit:function(){var a=this,b=this.container.find(\".dropdown-status\"),c=this.params,d=!1,f=function(a){\"string\"==typeof a&&c.statuses&&c.statuses[a]?b.html(c.statuses[a]).show():b.hide()};this.container.on(\"click keydown\",\".dropdown\",function(b){e.utils.isKeydownButNotEnterEvent(b)||(b.preventDefault(),d||a.container.toggleClass(\"open\"),a.container.hasClass(\"open\")&&a.container.parent().parent().find(\"li.library-selected\").focus(),d=!0,setTimeout(function(){d=!1},400))}),this.setting.bind(f),f(this.setting())},renderContent:function(){var a,c=this;0!==b(\"#tmpl-\"+c.templateSelector).length&&(a=wp.template(c.templateSelector),a&&c.container&&c.container.html(a(c.params)))}}),e.ColorControl=e.Control.extend({ready:function(){var a=this,b=this.container.find(\".color-picker-hex\");b.val(a.setting()).wpColorPicker({change:function(){a.setting.set(b.wpColorPicker(\"color\"))},clear:function(){a.setting.set(\"\")}}),this.setting.bind(function(a){b.val(a),b.wpColorPicker(\"color\",a)})}}),e.MediaControl=e.Control.extend({ready:function(){function a(a){var d=b.Deferred();c.extended(e.UploadControl)?d.resolve():(a=parseInt(a,10),_.isNaN(a)||a<=0?(delete c.params.attachment,d.resolve()):c.params.attachment&&c.params.attachment.id===a&&d.resolve()),\"pending\"===d.state()&&wp.media.attachment(a).fetch().done(function(){c.params.attachment=this.attributes,d.resolve(),wp.customize.previewer.send(c.setting.id+\"-attachment-data\",this.attributes)}),d.done(function(){c.renderContent()})}var c=this;_.bindAll(c,\"restoreDefault\",\"removeFile\",\"openFrame\",\"select\",\"pausePlayer\"),c.container.on(\"click keydown\",\".upload-button\",c.openFrame),c.container.on(\"click keydown\",\".upload-button\",c.pausePlayer),c.container.on(\"click keydown\",\".thumbnail-image img\",c.openFrame),c.container.on(\"click keydown\",\".default-button\",c.restoreDefault),c.container.on(\"click keydown\",\".remove-button\",c.pausePlayer),c.container.on(\"click keydown\",\".remove-button\",c.removeFile),c.container.on(\"click keydown\",\".remove-button\",c.cleanupPlayer),e.section(c.section()).container.on(\"expanded\",function(){c.player&&c.player.setControlsSize()}).on(\"collapsed\",function(){c.pausePlayer()}),a(c.setting()),c.setting.bind(a)},pausePlayer:function(){this.player&&this.player.pause()},cleanupPlayer:function(){this.player&&wp.media.mixin.removePlayer(this.player)},openFrame:function(a){e.utils.isKeydownButNotEnterEvent(a)||(a.preventDefault(),this.frame||this.initFrame(),this.frame.open())},initFrame:function(){this.frame=wp.media({button:{text:this.params.button_labels.frame_button},states:[new wp.media.controller.Library({title:this.params.button_labels.frame_title,library:wp.media.query({type:this.params.mime_type}),multiple:!1,date:!1})]}),this.frame.on(\"select\",this.select)},select:function(){var a,b=this.frame.state().get(\"selection\").first().toJSON(),c=window._wpmejsSettings||{};this.params.attachment=b,this.setting(b.id),a=this.container.find(\"audio, video\").get(0),a?this.player=new MediaElementPlayer(a,c):this.cleanupPlayer()},restoreDefault:function(a){e.utils.isKeydownButNotEnterEvent(a)||(a.preventDefault(),this.params.attachment=this.params.defaultAttachment,this.setting(this.params.defaultAttachment.url))},removeFile:function(a){e.utils.isKeydownButNotEnterEvent(a)||(a.preventDefault(),this.params.attachment={},this.setting(\"\"),this.renderContent())}}),e.UploadControl=e.MediaControl.extend({select:function(){var a,b=this.frame.state().get(\"selection\").first().toJSON(),c=window._wpmejsSettings||{};this.params.attachment=b,this.setting(b.url),a=this.container.find(\"audio, video\").get(0),a?this.player=new MediaElementPlayer(a,c):this.cleanupPlayer()},success:function(){},removerVisibility:function(){}}),e.ImageControl=e.UploadControl.extend({thumbnailSrc:function(){}}),e.BackgroundControl=e.UploadControl.extend({ready:function(){e.UploadControl.prototype.ready.apply(this,arguments)},select:function(){e.UploadControl.prototype.select.apply(this,arguments),wp.ajax.post(\"custom-background-add\",{nonce:_wpCustomizeBackground.nonces.add,wp_customize:\"on\",theme:e.settings.theme.stylesheet,attachment_id:this.params.attachment.id})}}),e.CroppedImageControl=e.MediaControl.extend({openFrame:function(a){e.utils.isKeydownButNotEnterEvent(a)||(this.initFrame(),this.frame.setState(\"library\").open())},initFrame:function(){var a=_wpMediaViewsL10n;this.frame=wp.media({button:{text:a.select,close:!1},states:[new wp.media.controller.Library({title:this.params.button_labels.frame_title,library:wp.media.query({type:\"image\"}),multiple:!1,date:!1,priority:20,suggestedWidth:this.params.width,suggestedHeight:this.params.height}),new wp.media.controller.CustomizeImageCropper({imgSelectOptions:this.calculateImageSelectOptions,control:this})]}),this.frame.on(\"select\",this.onSelect,this),this.frame.on(\"cropped\",this.onCropped,this),this.frame.on(\"skippedcrop\",this.onSkippedCrop,this)},onSelect:function(){var a=this.frame.state().get(\"selection\").first().toJSON();this.params.width!==a.width||this.params.height!==a.height||this.params.flex_width||this.params.flex_height?this.frame.setState(\"cropper\"):(this.setImageFromAttachment(a),this.frame.close())},onCropped:function(a){this.setImageFromAttachment(a)},calculateImageSelectOptions:function(a,b){var c,d,e,f=b.get(\"control\"),g=!!parseInt(f.params.flex_width,10),h=!!parseInt(f.params.flex_height,10),i=a.get(\"width\"),j=a.get(\"height\"),k=parseInt(f.params.width,10),l=parseInt(f.params.height,10),m=k/l,n=k,o=l;return b.set(\"canSkipCrop\",!f.mustBeCropped(g,h,k,l,i,j)),i/j>m?(l=j,k=l*m):(k=i,l=k/m),c=(i-k)/2,d=(j-l)/2,e={handles:!0,keys:!0,instance:!0,persistent:!0,imageWidth:i,imageHeight:j,minWidth:n>k?k:n,minHeight:o>l?l:o,x1:c,y1:d,x2:k+c,y2:l+d},h===!1&&g===!1&&(e.aspectRatio=k+\":\"+l),!0===h&&(delete e.minHeight,e.maxWidth=i),!0===g&&(delete e.minWidth,e.maxHeight=j),e},mustBeCropped:function(a,b,c,d,e,f){return(!0!==a||!0!==b)&&((!0!==a||d!==f)&&((!0!==b||c!==e)&&((c!==e||d!==f)&&!(e<=c))))},onSkippedCrop:function(){var a=this.frame.state().get(\"selection\").first().toJSON();this.setImageFromAttachment(a)},setImageFromAttachment:function(a){this.params.attachment=a,this.setting(a.id)}}),e.SiteIconControl=e.CroppedImageControl.extend({initFrame:function(){var a=_wpMediaViewsL10n;this.frame=wp.media({button:{text:a.select,close:!1},states:[new wp.media.controller.Library({title:this.params.button_labels.frame_title,library:wp.media.query({type:\"image\"}),multiple:!1,date:!1,priority:20,suggestedWidth:this.params.width,suggestedHeight:this.params.height}),new wp.media.controller.SiteIconCropper({imgSelectOptions:this.calculateImageSelectOptions,control:this})]}),this.frame.on(\"select\",this.onSelect,this),this.frame.on(\"cropped\",this.onCropped,this),this.frame.on(\"skippedcrop\",this.onSkippedCrop,this)},onSelect:function(){var a=this.frame.state().get(\"selection\").first().toJSON(),b=this;this.params.width!==a.width||this.params.height!==a.height||this.params.flex_width||this.params.flex_height?this.frame.setState(\"cropper\"):wp.ajax.post(\"crop-image\",{nonce:a.nonces.edit,id:a.id,context:\"site-icon\",cropDetails:{x1:0,y1:0,width:this.params.width,height:this.params.height,dst_width:this.params.width,dst_height:this.params.height}}).done(function(a){b.setImageFromAttachment(a),b.frame.close()}).fail(function(){b.frame.trigger(\"content:error:crop\")})},setImageFromAttachment:function(a){var c,d=[\"site_icon-32\",\"thumbnail\",\"full\"];_.each(d,function(b){c||_.isUndefined(a.sizes[b])||(c=a.sizes[b])}),this.params.attachment=a,this.setting(a.id),b('link[sizes=\"32x32\"]').attr(\"href\",c.url)},removeFile:function(a){e.utils.isKeydownButNotEnterEvent(a)||(a.preventDefault(),this.params.attachment={},this.setting(\"\"),this.renderContent(),b('link[rel=\"icon\"]').attr(\"href\",\"\"))}}),e.HeaderControl=e.Control.extend({ready:function(){this.btnRemove=b(\"#customize-control-header_image .actions .remove\"),this.btnNew=b(\"#customize-control-header_image .actions .new\"),_.bindAll(this,\"openMedia\",\"removeImage\"),this.btnNew.on(\"click\",this.openMedia),this.btnRemove.on(\"click\",this.removeImage),e.HeaderTool.currentHeader=this.getInitialHeaderImage(),new e.HeaderTool.CurrentView({model:e.HeaderTool.currentHeader,el:\"#customize-control-header_image .current .container\"}),new e.HeaderTool.ChoiceListView({collection:e.HeaderTool.UploadsList=new e.HeaderTool.ChoiceList,el:\"#customize-control-header_image .choices .uploaded .list\"}),new e.HeaderTool.ChoiceListView({collection:e.HeaderTool.DefaultsList=new e.HeaderTool.DefaultsList,el:\"#customize-control-header_image .choices .default .list\"}),e.HeaderTool.combinedList=e.HeaderTool.CombinedList=new e.HeaderTool.CombinedList([e.HeaderTool.UploadsList,e.HeaderTool.DefaultsList]),wp.media.controller.Cropper.prototype.defaults.doCropArgs.wp_customize=\"on\",wp.media.controller.Cropper.prototype.defaults.doCropArgs.theme=e.settings.theme.stylesheet},getInitialHeaderImage:function(){if(!e.get().header_image||!e.get().header_image_data||_.contains([\"remove-header\",\"random-default-image\",\"random-uploaded-image\"],e.get().header_image))return new e.HeaderTool.ImageModel;var a=_.find(_wpCustomizeHeader.uploads,function(a){return a.attachment_id===e.get().header_image_data.attachment_id});return a||(a={url:e.get().header_image,thumbnail_url:e.get().header_image,attachment_id:e.get().header_image_data.attachment_id}),new e.HeaderTool.ImageModel({header:a,choice:a.url.split(\"/\").pop()})},calculateImageSelectOptions:function(a,b){var c,d,f,g,h,i,j=parseInt(_wpCustomizeHeader.data.width,10),k=parseInt(_wpCustomizeHeader.data.height,10),l=!!parseInt(_wpCustomizeHeader.data[\"flex-width\"],10),m=!!parseInt(_wpCustomizeHeader.data[\"flex-height\"],10);return h=a.get(\"width\"),g=a.get(\"height\"),this.headerImage=new e.HeaderTool.ImageModel,this.headerImage.set({themeWidth:j,themeHeight:k,themeFlexWidth:l,themeFlexHeight:m,imageWidth:h,imageHeight:g}),b.set(\"canSkipCrop\",!this.headerImage.shouldBeCropped()),c=j/k,d=h,f=g,d/f>c?(k=f,j=k*c):(j=d,k=j/c),i={handles:!0,keys:!0,instance:!0,persistent:!0,imageWidth:h,imageHeight:g,x1:0,y1:0,x2:j,y2:k},m===!1&&l===!1&&(i.aspectRatio=j+\":\"+k),m===!1&&(i.maxHeight=k),l===!1&&(i.maxWidth=j),i},openMedia:function(a){var b=_wpMediaViewsL10n;a.preventDefault(),this.frame=wp.media({button:{text:b.selectAndCrop,close:!1},states:[new wp.media.controller.Library({title:b.chooseImage,library:wp.media.query({type:\"image\"}),multiple:!1,date:!1,priority:20,suggestedWidth:_wpCustomizeHeader.data.width,suggestedHeight:_wpCustomizeHeader.data.height}),new wp.media.controller.Cropper({imgSelectOptions:this.calculateImageSelectOptions})]}),this.frame.on(\"select\",this.onSelect,this),this.frame.on(\"cropped\",this.onCropped,this),this.frame.on(\"skippedcrop\",this.onSkippedCrop,this),this.frame.open()},onSelect:function(){this.frame.setState(\"cropper\")},onCropped:function(a){var b=a.url,c=a.attachment_id,d=a.width,e=a.height;this.setImageFromURL(b,c,d,e)},onSkippedCrop:function(a){var b=a.get(\"url\"),c=a.get(\"width\"),d=a.get(\"height\");this.setImageFromURL(b,a.id,c,d)},setImageFromURL:function(a,b,c,d){var f,g={};g.url=a,g.thumbnail_url=a,g.timestamp=_.now(),b&&(g.attachment_id=b),c&&(g.width=c),d&&(g.height=d),f=new e.HeaderTool.ImageModel({header:g,choice:a.split(\"/\").pop()}),e.HeaderTool.UploadsList.add(f),e.HeaderTool.currentHeader.set(f.toJSON()),f.save(),f.importImage()},removeImage:function(){e.HeaderTool.currentHeader.trigger(\"hide\"),e.HeaderTool.CombinedList.trigger(\"control:removeImage\")}}),e.ThemeControl=e.Control.extend({touchDrag:!1,isRendered:!1,renderContent:function(){var a=this,b=arguments;e.section(a.section(),function(c){c.expanded()?(e.Control.prototype.renderContent.apply(a,b),a.isRendered=!0):c.expanded.bind(function(c){\n    2: c&&!a.isRendered&&(e.Control.prototype.renderContent.apply(a,b),a.isRendered=!0)})})},ready:function(){var a=this;a.container.on(\"touchmove\",\".theme\",function(){a.touchDrag=!0}),a.container.on(\"click keydown touchend\",\".theme\",function(c){if(!e.utils.isKeydownButNotEnterEvent(c)){if(a.touchDrag===!0)return a.touchDrag=!1;if(!b(c.target).is(\".theme-actions .button\")){var d=b(this).data(\"previewUrl\");b(\".wp-full-overlay\").addClass(\"customize-loading\"),window.parent.location=d}}}),a.container.on(\"click keydown\",\".theme-actions .theme-details\",function(b){e.utils.isKeydownButNotEnterEvent(b)||(b.preventDefault(),e.section(a.section()).showDetails(a.params.theme))}),a.container.on(\"render-screenshot\",function(){var a=b(this).find(\"img\"),c=a.data(\"src\");c&&a.attr(\"src\",c)})},filter:function(a){var b=this,c=b.params.theme.name+\" \"+b.params.theme.description+\" \"+b.params.theme.tags+\" \"+b.params.theme.author;c=c.toLowerCase().replace(\"-\",\" \"),-1!==c.search(a)?b.activate():b.deactivate()}}),e.defaultConstructor=e.Setting,e.control=new e.Values({defaultConstructor:e.Control}),e.section=new e.Values({defaultConstructor:e.Section}),e.panel=new e.Values({defaultConstructor:e.Panel}),e.PreviewFrame=e.Messenger.extend({sensitivity:2e3,initialize:function(a,c){var d=b.Deferred();d.promise(this),this.container=a.container,this.signature=a.signature,b.extend(a,{channel:e.PreviewFrame.uuid()}),e.Messenger.prototype.initialize.call(this,a,c),this.add(\"previewUrl\",a.previewUrl),this.query=b.extend(a.query||{},{customize_messenger_channel:this.channel()}),this.run(d)},run:function(a){var c=this,d=!1,f=!1;this._ready&&this.unbind(\"ready\",this._ready),this._ready=function(){f=!0,d&&a.resolveWith(c)},this.bind(\"ready\",this._ready),this.bind(\"ready\",function(a){if(this.container.addClass(\"iframe-ready\"),a){var b={panel:a.activePanels,section:a.activeSections,control:a.activeControls};_(b).each(function(a,b){e[b].each(function(b,c){var d=!(!a||!a[c]);d?b.activate():b.deactivate()})}),a.settingValidities&&e._handleSettingValidities({settingValidities:a.settingValidities,focusInvalidControl:!1})}}),this.request=b.ajax(this.previewUrl(),{type:\"POST\",data:this.query,xhrFields:{withCredentials:!0}}),this.request.fail(function(){a.rejectWith(c,[\"request failure\"])}),this.request.done(function(g){var h,i=c.request.getResponseHeader(\"Location\"),j=c.signature;return i&&i!==c.previewUrl()?void a.rejectWith(c,[\"redirect\",i]):\"0\"===g?void c.login(a):\"-1\"===g?void a.rejectWith(c,[\"cheatin\"]):(h=g.lastIndexOf(j),-1===h||h<g.lastIndexOf(\"</html>\")?void a.rejectWith(c,[\"unsigned\"]):(g=g.slice(0,h)+g.slice(h+j.length),c.iframe=b(\"<iframe />\",{title:e.l10n.previewIframeTitle}).appendTo(c.container),c.iframe.one(\"load\",function(){d=!0,f?a.resolveWith(c):setTimeout(function(){a.rejectWith(c,[\"ready timeout\"])},c.sensitivity)}),c.targetWindow(c.iframe[0].contentWindow),c.targetWindow().document.open(),c.targetWindow().document.write(g),void c.targetWindow().document.close()))})},login:function(a){var c,d=this;return c=function(){a.rejectWith(d,[\"logged out\"])},this.triedLogin?c():void b.get(e.settings.url.ajax,{action:\"logged-in\"}).fail(c).done(function(f){var g;\"1\"!==f&&c(),g=b(\"<iframe />\",{src:d.previewUrl(),title:e.l10n.previewIframeTitle}).hide(),g.appendTo(d.container),g.on(\"load\",function(){d.triedLogin=!0,g.remove(),d.run(a)})})},destroy:function(){e.Messenger.prototype.destroy.call(this),this.request.abort(),this.iframe&&this.iframe.remove(),delete this.request,delete this.iframe,delete this.targetWindow}}),function(){var a=0;e.PreviewFrame.uuid=function(){return\"preview-\"+a++}}(),e.setDocumentTitle=function(a){var b,c;b=e.settings.documentTitleTmpl,c=b.replace(\"%s\",a),document.title=c,e.trigger(\"title\",c)},e.Previewer=e.Messenger.extend({refreshBuffer:250,initialize:function(a,c){var d=this,f=/^https?/;b.extend(this,c||{}),this.deferred={active:b.Deferred()},this.refresh=function(a){var b,c=a.refresh,d=function(){b=null,c.call(a)};return function(){if(\"number\"!=typeof b){if(!a.loading)return d();a.abort()}clearTimeout(b),b=setTimeout(d,a.refreshBuffer)}}(this),this.container=e.ensure(a.container),this.allowedUrls=a.allowedUrls,this.signature=a.signature,a.url=window.location.href,e.Messenger.prototype.initialize.call(this,a),this.add(\"scheme\",this.origin()).link(this.origin).setter(function(a){var b=a.match(f);return b?b[0]:\"\"}),this.add(\"previewUrl\",a.previewUrl).setter(function(a){var c;return/\\/wp-admin(\\/|$)/.test(a.replace(/[#?].*$/,\"\"))?null:(b.each([a.replace(f,d.scheme()),a],function(a,e){if(b.each(d.allowedUrls,function(a,b){var d;if(b=b.replace(/\\/+$/,\"\"),d=e.replace(b,\"\"),0===e.indexOf(b)&&/^([/#?]|$)/.test(d))return c=e,!1}),c)return!1}),c?c:null)}),this.previewUrl.bind(this.refresh),this.scroll=0,this.bind(\"scroll\",function(a){this.scroll=a}),this.bind(\"url\",this.previewUrl),this.bind(\"documentTitle\",function(a){e.setDocumentTitle(a)})},query:function(){},abort:function(){this.loading&&(this.loading.destroy(),delete this.loading)},refresh:function(){var a=this;this.send(\"loading-initiated\"),this.abort(),this.loading=new e.PreviewFrame({url:this.url(),previewUrl:this.previewUrl(),query:this.query()||{},container:this.container,signature:this.signature}),this.loading.done(function(){this.bind(\"synced\",function(){a.preview&&a.preview.destroy(),a.preview=this,delete a.loading,a.targetWindow(this.targetWindow()),a.channel(this.channel()),a.deferred.active.resolve(),a.send(\"active\")}),this.send(\"sync\",{scroll:a.scroll,settings:e.get()})}),this.loading.fail(function(b,c){a.send(\"loading-failed\"),\"redirect\"===b&&c&&a.previewUrl(c),\"logged out\"===b&&(a.preview&&(a.preview.destroy(),delete a.preview),a.login().done(a.refresh)),\"cheatin\"===b&&a.cheatin()})},login:function(){var a,c,d,f=this;return this._login?this._login:(a=b.Deferred(),this._login=a.promise(),c=new e.Messenger({channel:\"login\",url:e.settings.url.login}),d=b(\"<iframe />\",{src:e.settings.url.login,title:e.l10n.loginIframeTitle}).appendTo(this.container),c.targetWindow(d[0].contentWindow),c.bind(\"login\",function(){var b=f.refreshNonces();b.always(function(){d.remove(),c.destroy(),delete f._login}),b.done(function(){a.resolve()}),b.fail(function(){f.cheatin(),a.reject()})}),this._login)},cheatin:function(){b(document.body).empty().addClass(\"cheatin\").append(\"<h1>\"+e.l10n.cheatin+\"</h1><p>\"+e.l10n.notAllowed+\"</p>\")},refreshNonces:function(){var a,c=b.Deferred();return c.promise(),a=wp.ajax.post(\"customize_refresh_nonces\",{wp_customize:\"on\",theme:e.settings.theme.stylesheet}),a.done(function(a){e.trigger(\"nonce-refresh\",a),c.resolve()}),a.fail(function(){c.reject()}),c}}),e.settingConstructor={},e.controlConstructor={color:e.ColorControl,media:e.MediaControl,upload:e.UploadControl,image:e.ImageControl,cropped_image:e.CroppedImageControl,site_icon:e.SiteIconControl,header:e.HeaderControl,background:e.BackgroundControl,theme:e.ThemeControl},e.panelConstructor={},e.sectionConstructor={themes:e.ThemesSection},e._handleSettingValidities=function(a){var b,c=[],d=!1;_.each(a.settingValidities,function(a,b){var d=e(b);d&&(_.isObject(a)&&_.each(a,function(a,b){var f,g=new e.Notification(b,a),h=!1;f=d.notifications(g.code),f&&(h=g.type!==f.type||!_.isEqual(g.data,f.data)),h&&d.notifications.remove(b),d.notifications.has(g.code)||d.notifications.add(b,g),c.push(d.id)}),d.notifications.each(function(b){\"error\"!==b.type||!0!==a&&a[b.code]||d.notifications.remove(b.code)}))}),a.focusInvalidControl&&(b=e.findControlsForSettings(c),_(_.values(b)).find(function(a){return _(a).find(function(a){var b=a.section()&&e.section.has(a.section())&&e.section(a.section()).expanded();return b&&a.expanded&&(b=a.expanded()),b&&(a.focus(),d=!0),d})}),d||_.isEmpty(b)||_.values(b)[0][0].focus())},e.findControlsForSettings=function(a){var b,c={};return _.each(_.unique(a),function(a){var d=e(a);d&&(b=d.findControls(),b&&b.length>0&&(c[a]=b))}),c},e.reflowPaneContents=_.bind(function(){var a,c,d,f=[],g=!1;document.activeElement&&(c=b(document.activeElement)),e.panel.each(function(b){var c=b.sections(),d=_.pluck(c,\"container\");f.push(b),a=b.container.find(\"ul:first\"),e.utils.areElementListsEqual(d,a.children(\"[id]\"))||(_(c).each(function(b){a.append(b.container)}),g=!0)}),e.section.each(function(b){var c=b.controls(),d=_.pluck(c,\"container\");b.panel()||f.push(b),a=b.container.find(\"ul:first\"),e.utils.areElementListsEqual(d,a.children(\"[id]\"))||(_(c).each(function(b){a.append(b.container)}),g=!0)}),f.sort(e.utils.prioritySort),d=_.pluck(f,\"container\"),a=b(\"#customize-theme-controls\").children(\"ul\"),e.utils.areElementListsEqual(d,a.children())||(_(f).each(function(b){a.append(b.container)}),g=!0),e.panel.each(function(a){var b=a.active();a.active.callbacks.fireWith(a.active,[b,b])}),e.section.each(function(a){var b=a.active();a.active.callbacks.fireWith(a.active,[b,b])}),g&&c&&c.focus(),e.trigger(\"pane-contents-reflowed\")},e),b(function(){if(e.settings=window._wpCustomizeSettings,e.l10n=window._wpCustomizeControlsL10n,e.settings&&b.support.postMessage&&(b.support.cors||!e.settings.isCrossDomain)){var a,c,d=b(document.body),f=d.children(\".wp-full-overlay\"),g=b(\"#customize-info .panel-title.site-title\"),h=b(\".customize-controls-close\"),i=b(\"#save\"),j=b(\"#customize-footer-actions\");b(\"#customize-controls\").on(\"keydown\",function(a){var c=13===a.which,d=b(a.target);c&&(d.is(\"input:not([type=button])\")||d.is(\"select\"))&&a.preventDefault()}),b(\".customize-info\").find(\"> .accordion-section-title .customize-help-toggle\").on(\"click\",function(){var a=b(this).closest(\".accordion-section\"),c=a.find(\".customize-panel-description:first\");a.hasClass(\"cannot-expand\")||(a.hasClass(\"open\")?(a.toggleClass(\"open\"),c.slideUp(e.Panel.prototype.defaultExpandedArguments.duration),b(this).attr(\"aria-expanded\",!1)):(c.slideDown(e.Panel.prototype.defaultExpandedArguments.duration),a.toggleClass(\"open\"),b(this).attr(\"aria-expanded\",!0)))}),e.previewer=new e.Previewer({container:\"#customize-preview\",form:\"#customize-controls\",previewUrl:e.settings.url.preview,allowedUrls:e.settings.url.allowed,signature:\"WP_CUSTOMIZER_SIGNATURE\"},{nonce:e.settings.nonce,query:function(){var a={};return e.each(function(b,c){b._dirty&&(a[c]=b())}),{wp_customize:\"on\",theme:e.settings.theme.stylesheet,customized:JSON.stringify(a),nonce:this.nonce.preview}},save:function(){function a(a){k[a.id]=!0}var c,f,g,h=this,j=e.state(\"processing\"),k={},l=[];d.addClass(\"saving\"),e.bind(\"change\",a),f=function(){var c,f;return e.each(function(a){a.notifications.each(function(b){\"error\"!==b.type||b.data&&b.data.from_server||l.push(a.id)})}),g=e.findControlsForSettings(l),_.isEmpty(g)?(f=b.extend(h.query(),{nonce:h.nonce.save}),c=wp.ajax.post(\"customize_save\",f),i.prop(\"disabled\",!0),e.trigger(\"save\",c),c.always(function(){d.removeClass(\"saving\"),i.prop(\"disabled\",!1),e.unbind(\"change\",a)}),c.fail(function(a){\"0\"===a?a=\"not_logged_in\":\"-1\"===a&&(a=\"invalid_nonce\"),\"invalid_nonce\"===a?h.cheatin():\"not_logged_in\"===a&&(h.preview.iframe.hide(),h.login().done(function(){h.save(),h.preview.iframe.show()})),a.setting_validities&&e._handleSettingValidities({settingValidities:a.setting_validities,focusInvalidControl:!0}),e.trigger(\"error\",a)}),void c.done(function(a){e.each(function(a){k[a.id]||(a._dirty=!1)}),e.previewer.send(\"saved\",a),a.setting_validities&&e._handleSettingValidities({settingValidities:a.setting_validities,focusInvalidControl:!0}),e.trigger(\"saved\",a),_.isEmpty(k)||e.state(\"saved\").set(!1)})):(_.values(g)[0][0].focus(),d.removeClass(\"saving\"),void e.unbind(\"change\",a))},0===j()?f():(c=function(){0===j()&&(e.state.unbind(\"change\",c),f())},e.state.bind(\"change\",c))}}),e.previewer.bind(\"nonce\",function(a){b.extend(this.nonce,a)}),e.bind(\"nonce-refresh\",function(a){b.extend(e.settings.nonce,a),b.extend(e.previewer.nonce,a),e.previewer.send(\"nonce-refresh\",a)}),b.each(e.settings.settings,function(a,b){var c,d=e.settingConstructor[b.type]||e.Setting;c=new d(a,b.value,{transport:b.transport,previewer:e.previewer,dirty:!!b.dirty}),e.add(a,c)}),b.each(e.settings.panels,function(a,b){var c,d=e.panelConstructor[b.type]||e.Panel;c=new d(a,{params:b}),e.panel.add(a,c)}),b.each(e.settings.sections,function(a,b){var c,d=e.sectionConstructor[b.type]||e.Section;c=new d(a,{params:b}),e.section.add(a,c)}),b.each(e.settings.controls,function(a,b){var c,d=e.controlConstructor[b.type]||e.Control;c=new d(a,{params:b,previewer:e.previewer}),e.control.add(a,c)}),_.each([\"panel\",\"section\",\"control\"],function(a){var b=e.settings.autofocus[a];b&&e[a](b,function(a){a.deferred.embedded.done(function(){e.previewer.deferred.active.done(function(){a.focus()})})})}),e.bind(\"ready\",e.reflowPaneContents),b([e.panel,e.section,e.control]).each(function(a,b){var c=_.debounce(e.reflowPaneContents,100);b.bind(\"add\",c),b.bind(\"change\",c),b.bind(\"remove\",c)}),e.previewer.previewUrl()?e.previewer.refresh():e.previewer.previewUrl(e.settings.url.home),function(){var a=new e.Values,b=a.create(\"saved\"),c=a.create(\"activated\"),d=a.create(\"processing\");a.bind(\"change\",function(){c()?b()?(i.val(e.l10n.saved).prop(\"disabled\",!0),h.find(\".screen-reader-text\").text(e.l10n.close)):(i.val(e.l10n.save).prop(\"disabled\",!1),h.find(\".screen-reader-text\").text(e.l10n.cancel)):(i.val(e.l10n.activate).prop(\"disabled\",!1),h.find(\".screen-reader-text\").text(e.l10n.cancel))}),b(!0),c(e.settings.theme.active),d(0),e.bind(\"change\",function(){a(\"saved\").set(!1)}),e.bind(\"saved\",function(){a(\"saved\").set(!0),a(\"activated\").set(!0)}),c.bind(function(a){a&&e.trigger(\"activated\")}),e.state=a}(),i.click(function(a){e.previewer.save(),a.preventDefault()}).keydown(function(a){9!==a.which&&(13===a.which&&e.previewer.save(),a.preventDefault())}),h.keydown(function(a){9!==a.which&&(13===a.which&&this.click(),a.preventDefault())}),b(\".collapse-sidebar\").on(\"click\",function(){\"true\"===b(this).attr(\"aria-expanded\")?b(this).attr({\"aria-expanded\":\"false\",\"aria-label\":e.l10n.expandSidebar}):b(this).attr({\"aria-expanded\":\"true\",\"aria-label\":e.l10n.collapseSidebar}),f.toggleClass(\"collapsed\").toggleClass(\"expanded\")}),b(\"body\").on(\"keydown\",function(a){var b,c=[],d=[],f=[];27===a.which&&(e.control.each(function(a){a.expanded&&a.expanded()&&_.isFunction(a.collapse)&&c.push(a)}),e.section.each(function(a){a.expanded()&&d.push(a)}),e.panel.each(function(a){a.expanded()&&f.push(a)}),c.length>0&&0===d.length&&(c.length=0),b=c[0]||d[0]||f[0],b&&(b.collapse(),a.preventDefault()))}),b(\".customize-controls-preview-toggle\").on(\"click\",function(){f.toggleClass(\"preview-only\")}),e.previewedDevice=new e.Value,e.bind(\"ready\",function(){_.find(e.settings.previewableDevices,function(a,b){if(!0===a[\"default\"])return e.previewedDevice.set(b),!0})}),j.find(\".devices button\").on(\"click\",function(a){e.previewedDevice.set(b(a.currentTarget).data(\"device\"))}),e.previewedDevice.bind(function(a){var c=b(\".wp-full-overlay\"),d=\"\";j.find(\".devices button\").removeClass(\"active\").attr(\"aria-pressed\",!1),j.find(\".devices .preview-\"+a).addClass(\"active\").attr(\"aria-pressed\",!0),b.each(e.settings.previewableDevices,function(a){d+=\" preview-\"+a}),c.removeClass(d).addClass(\"preview-\"+a)}),g.length&&e(\"blogname\",function(a){var c=function(){g.text(b.trim(a())||e.l10n.untitledBlogName)};a.bind(c),c()}),a=new e.Messenger({url:e.settings.url.parent,channel:\"loader\"}),a.bind(\"back\",function(){h.on(\"click.customize-controls-close\",function(b){b.preventDefault(),a.send(\"close\")})}),b(window).on(\"beforeunload\",function(){if(!e.state(\"saved\")())return setTimeout(function(){f.removeClass(\"customize-loading\")},1),e.l10n.saveAlert}),b.each([\"saved\",\"change\"],function(b,c){e.bind(c,function(){a.send(c)})}),e.bind(\"title\",function(b){a.send(\"title\",b)}),a.send(\"ready\"),b.each({background_image:{controls:[\"background_repeat\",\"background_position_x\",\"background_attachment\"],callback:function(a){return!!a}},show_on_front:{controls:[\"page_on_front\",\"page_for_posts\"],callback:function(a){return\"page\"===a}},header_textcolor:{controls:[\"header_textcolor\"],callback:function(a){return\"blank\"!==a}}},function(a,c){e(a,function(a){b.each(c.controls,function(b,d){e.control(d,function(b){var d=function(a){b.container.toggle(c.callback(a))};d(a.get()),a.bind(d)})})})}),e.control(\"display_header_text\",function(a){var b=\"\";a.elements[0].unsync(e(\"header_textcolor\")),a.element=new e.Element(a.container.find(\"input\")),a.element.set(\"blank\"!==a.setting()),a.element.bind(function(c){c||(b=e(\"header_textcolor\").get()),a.setting.set(c?b:\"blank\")}),a.setting.bind(function(b){a.element.set(\"blank\"!==b)})}),e(\"show_on_front\",\"page_on_front\",function(a,b){var c=function(){\"page\"===a()&&parseInt(b(),10)>0&&e.previewer.previewUrl.set(e.settings.url.home)};a.bind(c),b.bind(c)}),e(\"page_for_posts\",function(a){a.bind(function(a){a=parseInt(a,10),a>0&&e.previewer.previewUrl.set(e.settings.url.home+\"?page_id=\"+a)})}),e.previewer.bind(\"selective-refresh-setting-validities\",function(a){e._handleSettingValidities({settingValidities:a,focusInvalidControl:!1})}),e.previewer.bind(\"focus-control-for-setting\",function(a){var b;e.control.each(function(c){var d=_.pluck(c.settings,\"id\");-1!==_.indexOf(d,a)&&(b=c)}),b&&b.focus()}),e.previewer.bind(\"refresh\",function(){e.previewer.refresh()}),e.trigger(\"ready\"),c=h,c.focus(),setTimeout(function(){c.focus()},200)}})}(wp,jQuery);\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\js\\customize-nav-menus.js:\n  187  \t\tsearch: function( event ) {\n  188  \t\t\tvar $searchSection = $( '#available-menu-items-search' ),\n  189: \t\t\t\t$otherSections = $( '#available-menu-items .accordion-section' ).not( $searchSection );\n  190  \n  191  \t\t\tif ( ! event ) {\n  ...\n  198  \n  199  \t\t\tif ( '' !== event.target.value && ! $searchSection.hasClass( 'open' ) ) {\n  200: \t\t\t\t$otherSections.fadeOut( 100 );\n  201  \t\t\t\t$searchSection.find( '.accordion-section-content' ).slideDown( 'fast' );\n  202  \t\t\t\t$searchSection.addClass( 'open' );\n  ...\n  204  \t\t\t} else if ( '' === event.target.value ) {\n  205  \t\t\t\t$searchSection.removeClass( 'open' );\n  206: \t\t\t\t$otherSections.show();\n  207  \t\t\t\t$searchSection.find( '.clear-results' ).removeClass( 'is-visible' );\n  208  \t\t\t}\n  ...\n  357  \t\t// Adjust the height of each section of items to fit the screen.\n  358  \t\titemSectionHeight: function() {\n  359: \t\t\tvar sections, totalHeight, accordionHeight, diff;\n  360  \t\t\ttotalHeight = window.innerHeight;\n  361: \t\t\tsections = this.$el.find( '.accordion-section:not( #available-menu-items-search ) .accordion-section-content' );\n  362: \t\t\taccordionHeight =  46 * ( 2 + sections.length ) - 13; // Magic numbers.\n  363  \t\t\tdiff = totalHeight - accordionHeight;\n  364  \t\t\tif ( 120 < diff && 290 > diff ) {\n  365: \t\t\t\tsections.css( 'max-height', diff );\n  366  \t\t\t}\n  367  \t\t},\n  ...\n  669  \n  670  \t\t\t/*\n  671: \t\t\t * Since newly created sections won't be registered in PHP, we need to prevent the\n  672: \t\t\t * preview's sending of the activeSections to result in this control\n  673  \t\t\t * being deactivated when the preview refreshes. So we can hook onto\n  674  \t\t\t * the setting that has the same ID and its presence can dictate\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\js\\customize-widgets.js:\n 1512  \t * wp.customize.Widgets.WidgetsPanel\n 1513  \t *\n 1514: \t * Customizer panel containing the widget area sections.\n 1515  \t *\n 1516  \t * @since 4.4.0\n ....\n 1540  \n 1541  \t\t\t\tshouldShowNotice = function() {\n 1542: \t\t\t\t\treturn ( 0 === _.filter( panel.sections(), function( section ) {\n 1543  \t\t\t\t\t\treturn section.active();\n 1544  \t\t\t\t\t} ).length );\n ....\n 1565  \n 1566  \t\t/**\n 1567: \t\t * Allow an active widgets panel to be contextually active even when it has no active sections (widget areas).\n 1568  \t\t *\n 1569  \t\t * This ensures that the widgets panel appears even when there are no\n ....\n 1779  \t\t\t\t\t\tallowMultiple: true, // Prevent the section being dragged from to be collapsed\n 1780  \t\t\t\t\t\tcompleteCallback: function () {\n 1781: \t\t\t\t\t\t\t// @todo It is not clear when refreshPositions should be called on which sections, or if it is even needed\n 1782  \t\t\t\t\t\t\tapi.section.each( function ( otherSection ) {\n 1783  \t\t\t\t\t\t\t\tif ( otherSection.container.find( '.customize-control-sidebar_widgets' ).length ) {\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\js\\customize-widgets.min.js:\n    1: !function(a,b){function c(a,b){function c(d){d||(a.expanded.unbind(c),b.focus())}a.focus(),a.expanded.bind(c)}function d(a){var b,c={number:null,id_base:null};return b=a.match(/^(.+)-(\\d+)$/),b?(c.id_base=b[1],c.number=parseInt(b[2],10)):c.id_base=a,c}function e(a){var b,c=d(a);return b=\"widget_\"+c.id_base,c.number&&(b+=\"[\"+c.number+\"]\"),b}if(a&&a.customize){var f,g=a.customize;g.Widgets=g.Widgets||{},g.Widgets.savedWidgetIds={},g.Widgets.data=_wpCustomizeWidgetsSettings||{},f=g.Widgets.data.l10n,delete g.Widgets.data.l10n,g.Widgets.WidgetModel=Backbone.Model.extend({id:null,temp_id:null,classname:null,control_tpl:null,description:null,is_disabled:null,is_multi:null,multi_number:null,name:null,id_base:null,transport:null,params:[],width:null,height:null,search_matched:!0}),g.Widgets.WidgetCollection=Backbone.Collection.extend({model:g.Widgets.WidgetModel,doSearch:function(a){this.terms!==a&&(this.terms=a,this.terms.length>0&&this.search(this.terms),\"\"===this.terms&&this.each(function(a){a.set(\"search_matched\",!0)}))},search:function(a){var b,c;a=a.replace(/[-\\/\\\\^$*+?.()|[\\]{}]/g,\"\\\\$&\"),a=a.replace(/ /g,\")(?=.*\"),b=new RegExp(\"^(?=.*\"+a+\").+\",\"i\"),this.each(function(a){c=[a.get(\"name\"),a.get(\"id\"),a.get(\"description\")].join(\" \"),a.set(\"search_matched\",b.test(c))})}}),g.Widgets.availableWidgets=new g.Widgets.WidgetCollection(g.Widgets.data.availableWidgets),g.Widgets.SidebarModel=Backbone.Model.extend({after_title:null,after_widget:null,before_title:null,before_widget:null,\"class\":null,description:null,id:null,name:null,is_rendered:!1}),g.Widgets.SidebarCollection=Backbone.Collection.extend({model:g.Widgets.SidebarModel}),g.Widgets.registeredSidebars=new g.Widgets.SidebarCollection(g.Widgets.data.registeredSidebars),g.Widgets.AvailableWidgetsPanelView=a.Backbone.View.extend({el:\"#available-widgets\",events:{\"input #widgets-search\":\"search\",\"keyup #widgets-search\":\"search\",\"change #widgets-search\":\"search\",\"search #widgets-search\":\"search\",\"focus .widget-tpl\":\"focus\",\"click .widget-tpl\":\"_submit\",\"keypress .widget-tpl\":\"_submit\",keydown:\"keyboardAccessible\"},selected:null,currentSidebarControl:null,$search:null,initialize:function(){var a=this;this.$search=b(\"#widgets-search\"),_.bindAll(this,\"close\"),this.listenTo(this.collection,\"change\",this.updateList),this.updateList(),b(\"#customize-controls, #available-widgets .customize-section-title\").on(\"click keydown\",function(c){var d=b(c.target).is(\".add-new-widget, .add-new-widget *\");b(\"body\").hasClass(\"adding-widget\")&&!d&&a.close()}),g.previewer.bind(\"url\",this.close)},search:function(a){var b;this.collection.doSearch(a.target.value),this.selected&&!this.selected.is(\":visible\")&&(this.selected.removeClass(\"selected\"),this.selected=null),this.selected&&!a.target.value&&(this.selected.removeClass(\"selected\"),this.selected=null),!this.selected&&a.target.value&&(b=this.$el.find(\"> .widget-tpl:visible:first\"),b.length&&this.select(b))},updateList:function(){this.collection.each(function(a){var c=b(\"#widget-tpl-\"+a.id);c.toggle(a.get(\"search_matched\")&&!a.get(\"is_disabled\")),a.get(\"is_disabled\")&&c.is(this.selected)&&(this.selected=null)})},select:function(a){this.selected=b(a),this.selected.siblings(\".widget-tpl\").removeClass(\"selected\"),this.selected.addClass(\"selected\")},focus:function(a){this.select(b(a.currentTarget))},_submit:function(a){\"keypress\"===a.type&&13!==a.which&&32!==a.which||this.submit(b(a.currentTarget))},submit:function(a){var c,d,e;a||(a=this.selected),a&&this.currentSidebarControl&&(this.select(a),c=b(this.selected).data(\"widget-id\"),d=this.collection.findWhere({id:c}),d&&(e=this.currentSidebarControl.addWidget(d.get(\"id_base\")),e&&e.focus(),this.close()))},open:function(a){this.currentSidebarControl=a,_(this.currentSidebarControl.getWidgetFormControls()).each(function(a){a.params.is_wide&&a.collapseForm()}),b(\"body\").addClass(\"adding-widget\"),this.$el.find(\".selected\").removeClass(\"selected\"),this.collection.doSearch(\"\"),g.settings.browser.mobile||this.$search.focus()},close:function(a){a=a||{},a.returnFocus&&this.currentSidebarControl&&this.currentSidebarControl.container.find(\".add-new-widget\").focus(),this.currentSidebarControl=null,this.selected=null,b(\"body\").removeClass(\"adding-widget\"),this.$search.val(\"\")},keyboardAccessible:function(a){var c=13===a.which,d=27===a.which,e=40===a.which,f=38===a.which,g=9===a.which,h=a.shiftKey,i=null,j=this.$el.find(\"> .widget-tpl:visible:first\"),k=this.$el.find(\"> .widget-tpl:visible:last\"),l=b(a.target).is(this.$search),m=b(a.target).is(\".widget-tpl:visible:last\");return e||f?(e?l?i=j:this.selected&&0!==this.selected.nextAll(\".widget-tpl:visible\").length&&(i=this.selected.nextAll(\".widget-tpl:visible:first\")):f&&(l?i=k:this.selected&&0!==this.selected.prevAll(\".widget-tpl:visible\").length&&(i=this.selected.prevAll(\".widget-tpl:visible:first\"))),this.select(i),void(i?i.focus():this.$search.focus())):void(c&&!this.$search.val()||(c?this.submit():d&&this.close({returnFocus:!0}),this.currentSidebarControl&&g&&(h&&l||!h&&m)&&(this.currentSidebarControl.container.find(\".add-new-widget\").focus(),a.preventDefault())))}}),g.Widgets.formSyncHandlers={rss:function(a,c,d){var e=c.find(\".widget-error:first\"),f=b(\"<div>\"+d+\"</div>\").find(\".widget-error:first\");e.length&&f.length?e.replaceWith(f):e.length?e.remove():f.length&&c.find(\".widget-content:first\").prepend(f)}},g.Widgets.WidgetControl=g.Control.extend({defaultExpandedArguments:{duration:\"fast\",completeCallback:b.noop},initialize:function(a,c){var d=this;d.widgetControlEmbedded=!1,d.widgetContentEmbedded=!1,d.expanded=new g.Value((!1)),d.expandedArgumentsQueue=[],d.expanded.bind(function(a){var c=d.expandedArgumentsQueue.shift();c=b.extend({},d.defaultExpandedArguments,c),d.onChangeExpanded(a,c)}),d.altNotice=!0,g.Control.prototype.initialize.call(d,a,c)},ready:function(){var a=this;a.section()?g.section(a.section(),function(b){var c=function(d){d&&(a.embedWidgetControl(),b.expanded.unbind(c))};b.expanded()?c(!0):b.expanded.bind(c)}):a.embedWidgetControl()},embedWidgetControl:function(){var a,c=this;c.widgetControlEmbedded||(c.widgetControlEmbedded=!0,a=b(c.params.widget_control),c.container.append(a),c._setupModel(),c._setupWideWidget(),c._setupControlToggle(),c._setupWidgetTitle(),c._setupReorderUI(),c._setupHighlightEffects(),c._setupUpdateUI(),c._setupRemoveUI())},embedWidgetContent:function(){var a,c=this;c.embedWidgetControl(),c.widgetContentEmbedded||(c.widgetContentEmbedded=!0,a=b(c.params.widget_content),c.container.find(\".widget-content:first\").append(a),b(document).trigger(\"widget-added\",[c.container.find(\".widget:first\")]))},_setupModel:function(){var a,b=this;a=function(){g.Widgets.savedWidgetIds[b.params.widget_id]=!0},g.bind(\"ready\",a),g.bind(\"saved\",a),this._updateCount=0,this.isWidgetUpdating=!1,this.liveUpdateMode=!0,this.setting.bind(function(a,c){_(c).isEqual(a)||b.isWidgetUpdating||b.updateWidget({instance:a})})},_setupWideWidget:function(){var a,c,d,e,f,h=this;this.params.is_wide&&(a=this.container.find(\".widget-inside\"),c=a.find(\"> .form\"),d=b(\".wp-full-overlay-sidebar-content:first\"),this.container.addClass(\"wide-widget-control\"),this.container.find(\".widget-content:first\").css({\"max-width\":this.params.width,\"min-height\":this.params.height}),f=function(){var d,e=h.container.offset().top,f=b(window).height(),g=c.outerHeight();a.css(\"max-height\",f),d=Math.max(0,Math.min(Math.max(e,0),f-g)),a.css(\"top\",d)},e=b(\"#customize-theme-controls\"),this.container.on(\"expand\",function(){f(),d.on(\"scroll\",f),b(window).on(\"resize\",f),e.on(\"expanded collapsed\",f)}),this.container.on(\"collapsed\",function(){d.off(\"scroll\",f),b(window).off(\"resize\",f),e.off(\"expanded collapsed\",f)}),g.each(function(a){0===a.id.indexOf(\"sidebars_widgets[\")&&a.bind(function(){h.container.hasClass(\"expanded\")&&f()})}))},_setupControlToggle:function(){var a,b=this;this.container.find(\".widget-top\").on(\"click\",function(a){a.preventDefault();var c=b.getSidebarWidgetsControl();c.isReordering||b.expanded(!b.expanded())}),a=this.container.find(\".widget-control-close\"),a.on(\"click\",function(a){a.preventDefault(),b.collapse(),b.container.find(\".widget-top .widget-action:first\").focus()})},_setupWidgetTitle:function(){var a,b=this;a=function(){var a=b.setting().title,c=b.container.find(\".in-widget-title\");a?c.text(\": \"+a):c.text(\"\")},this.setting.bind(a),a()},_setupReorderUI:function(){var c,d,e,h,i,j=this;c=function(a){a.siblings(\".selected\").removeClass(\"selected\"),a.addClass(\"selected\");var b=a.data(\"id\")===j.params.sidebar_id;j.container.find(\".move-widget-btn\").prop(\"disabled\",b)},this.container.find(\".widget-title-action\").after(b(g.Widgets.data.tpl.widgetReorderNav)),i=_.template(g.Widgets.data.tpl.moveWidgetArea),d=b(i({sidebars:_(g.Widgets.registeredSidebars.toArray()).pluck(\"attributes\")})),this.container.find(\".widget-top\").after(d),h=function(){var a,e=d.find(\"li\"),f=0;a=e.filter(function(){return b(this).data(\"id\")===j.params.sidebar_id}),e.each(function(){var d,e,h,i=b(this);d=i.data(\"id\"),e=g.Widgets.registeredSidebars.get(d),h=e.get(\"is_rendered\"),i.toggle(h),h&&(f+=1),i.hasClass(\"selected\")&&!h&&c(a)}),f>1?j.container.find(\".move-widget\").show():j.container.find(\".move-widget\").hide()},h(),g.Widgets.registeredSidebars.on(\"change:is_rendered\",h),e=this.container.find(\".widget-reorder-nav\"),e.find(\".move-widget, .move-widget-down, .move-widget-up\").each(function(){b(this).prepend(j.container.find(\".widget-title\").text()+\": \")}).on(\"click keypress\",function(c){if(\"keypress\"!==c.type||13===c.which||32===c.which)if(b(this).focus(),b(this).is(\".move-widget\"))j.toggleWidgetMoveArea();else{var d=b(this).is(\".move-widget-down\"),e=b(this).is(\".move-widget-up\"),g=j.getWidgetSidebarPosition();if(e&&0===g||d&&g===j.getSidebarWidgetsControl().setting().length-1)return;e?(j.moveUp(),a.a11y.speak(f.widgetMovedUp)):(j.moveDown(),a.a11y.speak(f.widgetMovedDown)),b(this).focus()}}),this.container.find(\".widget-area-select\").on(\"click keypress\",\"li\",function(a){\"keypress\"===a.type&&13!==a.which&&32!==a.which||(a.preventDefault(),c(b(this)))}),this.container.find(\".move-widget-btn\").click(function(){j.getSidebarWidgetsControl().toggleReordering(!1);var a,b,c,d,e,f=j.params.sidebar_id,h=j.container.find(\".widget-area-select li.selected\").data(\"id\");a=g(\"sidebars_widgets[\"+f+\"]\"),b=g(\"sidebars_widgets[\"+h+\"]\"),c=Array.prototype.slice.call(a()),d=Array.prototype.slice.call(b()),e=j.getWidgetSidebarPosition(),c.splice(e,1),d.push(j.params.widget_id),a(c),b(d),j.focus()})},_setupHighlightEffects:function(){var a=this;this.container.on(\"mouseenter click\",function(){a.setting.previewer.send(\"highlight-widget\",a.params.widget_id)}),this.setting.bind(function(){a.setting.previewer.send(\"highlight-widget\",a.params.widget_id)})},_setupUpdateUI:function(){var a,c,d,e,h,i=this;a=this.container.find(\".widget:first\"),c=a.find(\".widget-content:first\"),d=this.container.find(\".widget-control-save\"),d.val(f.saveBtnLabel),d.attr(\"title\",f.saveBtnTooltip),d.removeClass(\"button-primary\").addClass(\"button-secondary\"),d.on(\"click\",function(a){a.preventDefault(),i.updateWidget({disable_form:!0})}),e=_.debounce(function(){i.updateWidget()},250),c.on(\"keydown\",\"input\",function(a){13===a.which&&(a.preventDefault(),i.updateWidget({ignoreActiveElement:!0}))}),c.on(\"change input propertychange\",\":input\",function(a){i.liveUpdateMode&&(\"change\"===a.type||this.checkValidity&&this.checkValidity())&&e()}),this.setting.previewer.channel.bind(\"synced\",function(){i.container.removeClass(\"previewer-loading\")}),g.previewer.bind(\"widget-updated\",function(a){a===i.params.widget_id&&i.container.removeClass(\"previewer-loading\")}),h=g.Widgets.formSyncHandlers[this.params.widget_id_base],h&&b(document).on(\"widget-synced\",function(b,c){a.is(c)&&h.apply(document,arguments)})},onChangeActive:function(a,b){this.container.toggleClass(\"widget-rendered\",a),b.completeCallback&&b.completeCallback()},_setupRemoveUI:function(){var a,b,c=this;a=this.container.find(\"a.widget-control-remove\"),a.on(\"click\",function(a){a.preventDefault();var b;b=c.container.next().is(\".customize-control-widget_form\")?c.container.next().find(\".widget-action:first\"):c.container.prev().is(\".customize-control-widget_form\")?c.container.prev().find(\".widget-action:first\"):c.container.next(\".customize-control-sidebar_widgets\").find(\".add-new-widget:first\"),c.container.slideUp(function(){var a,d,e=g.Widgets.getSidebarWidgetControlContainingWidget(c.params.widget_id);e&&(a=e.setting().slice(),d=_.indexOf(a,c.params.widget_id),-1!==d&&(a.splice(d,1),e.setting(a),b.focus()))})}),b=function(){a.text(f.removeBtnLabel),a.attr(\"title\",f.removeBtnTooltip)},this.params.is_new?g.bind(\"saved\",b):b()},_getInputs:function(a){return b(a).find(\":input[name]\")},_getInputsSignature:function(a){var c=_(a).map(function(a){var c,d=b(a);return c=d.is(\":checkbox, :radio\")?[d.attr(\"id\"),d.attr(\"name\"),d.prop(\"value\")]:[d.attr(\"id\"),d.attr(\"name\")],c.join(\",\")});return c.join(\";\")},_getInputState:function(a){return a=b(a),a.is(\":radio, :checkbox\")?a.prop(\"checked\"):a.is(\"select[multiple]\")?a.find(\"option:selected\").map(function(){return b(this).val()}).get():a.val()},_setInputState:function(a,c){a=b(a),a.is(\":radio, :checkbox\")?a.prop(\"checked\",c):a.is(\"select[multiple]\")?(c=b.isArray(c)?_.map(c,function(a){return String(a)}):[],a.find(\"option\").each(function(){b(this).prop(\"selected\",-1!==_.indexOf(c,String(this.value)))})):a.val(c)},getSidebarWidgetsControl:function(){var a,b;if(a=\"sidebars_widgets[\"+this.params.sidebar_id+\"]\",b=g.control(a))return b},updateWidget:function(c){var d,e,h,i,j,k,l,m,n,o,p,q=this;q.embedWidgetContent(),c=b.extend({instance:null,complete:null,ignoreActiveElement:!1},c),d=c.instance,e=c.complete,this._updateCount+=1,j=this._updateCount,h=this.container.find(\".widget:first\"),i=h.find(\".widget-content:first\"),i.find(\".widget-error\").remove(),this.container.addClass(\"widget-form-loading\"),this.container.addClass(\"previewer-loading\"),n=g.state(\"processing\"),n(n()+1),this.liveUpdateMode||this.container.addClass(\"widget-form-disabled\"),k={},k.action=\"update-widget\",k.wp_customize=\"on\",k.nonce=g.settings.nonce[\"update-widget\"],k.theme=g.settings.theme.stylesheet,k.customized=a.customize.previewer.query().customized,l=b.param(k),m=this._getInputs(i),m.each(function(){b(this).data(\"state\"+j,q._getInputState(this))}),l+=d?\"&\"+b.param({sanitized_widget_setting:JSON.stringify(d)}):\"&\"+m.serialize(),l+=\"&\"+i.find(\"~ :input\").serialize(),this._previousUpdateRequest&&this._previousUpdateRequest.abort(),o=b.post(a.ajax.settings.url,l),this._previousUpdateRequest=o,o.done(function(a){var d,k,l,n,o=!1;return\"0\"===a?(g.previewer.preview.iframe.hide(),void g.previewer.login().done(function(){q.updateWidget(c),g.previewer.preview.iframe.show()})):\"-1\"===a?void g.previewer.cheatin():void(a.success?(k=b(\"<div>\"+a.data.form+\"</div>\"),l=q._getInputs(k),n=q._getInputsSignature(m)===q._getInputsSignature(l),n&&!q.liveUpdateMode&&(q.liveUpdateMode=!0,q.container.removeClass(\"widget-form-disabled\"),q.container.find('input[name=\"savewidget\"]').hide()),n&&q.liveUpdateMode?(m.each(function(a){var d,e,f,g=b(this),h=b(l[a]);d=g.data(\"state\"+j),e=q._getInputState(h),g.data(\"sanitized\",e),f=!_.isEqual(d,e)&&(c.ignoreActiveElement||!g.is(document.activeElement)),f&&q._setInputState(g,e)}),b(document).trigger(\"widget-synced\",[h,a.data.form])):q.liveUpdateMode?(q.liveUpdateMode=!1,q.container.find('input[name=\"savewidget\"]').show(),o=!0):(i.html(a.data.form),q.container.removeClass(\"widget-form-disabled\"),b(document).trigger(\"widget-updated\",[h])),p=!o&&!_(q.setting()).isEqual(a.data.instance),p?(q.isWidgetUpdating=!0,q.setting(a.data.instance),q.isWidgetUpdating=!1):q.container.removeClass(\"previewer-loading\"),e&&e.call(q,null,{noChange:!p,ajaxFinished:!0})):(d=f.error,a.data&&a.data.message&&(d=a.data.message),e?e.call(q,d):i.prepend('<p class=\"widget-error\"><strong>'+d+\"</strong></p>\")))}),o.fail(function(a,b){e&&e.call(q,b)}),o.always(function(){q.container.removeClass(\"widget-form-loading\"),m.each(function(){b(this).removeData(\"state\"+j)}),n(n()-1)})},expandControlSection:function(){g.Control.prototype.expand.call(this)},_toggleExpanded:g.Section.prototype._toggleExpanded,expand:g.Section.prototype.expand,expandForm:function(){this.expand()},collapse:g.Section.prototype.collapse,collapseForm:function(){this.collapse()},toggleForm:function(a){\"undefined\"==typeof a&&(a=!this.expanded()),this.expanded(a)},onChangeExpanded:function(a,b){var c,d,e,f,h=this;return h.embedWidgetControl(),a&&h.embedWidgetContent(),b.unchanged?void(a&&g.Control.prototype.expand.call(h,{completeCallback:b.completeCallback})):(c=this.container.find(\"div.widget:first\"),d=c.find(\".widget-inside:first\"),void(a?(h.section()&&g.section(h.section())&&h.expandControlSection(),g.control.each(function(a){h.params.type===a.params.type&&h!==a&&a.collapse()}),e=function(){h.container.removeClass(\"expanding\"),h.container.addClass(\"expanded\"),h.container.trigger(\"expanded\")},b.completeCallback&&(f=e,e=function(){f(),b.completeCallback()}),h.params.is_wide?d.fadeIn(b.duration,e):d.slideDown(b.duration,e),h.container.trigger(\"expand\"),h.container.addClass(\"expanding\")):(e=function(){h.container.removeClass(\"collapsing\"),h.container.removeClass(\"expanded\"),h.container.trigger(\"collapsed\")},b.completeCallback&&(f=e,e=function(){f(),b.completeCallback()}),h.container.trigger(\"collapse\"),h.container.addClass(\"collapsing\"),h.params.is_wide?d.fadeOut(b.duration,e):d.slideUp(b.duration,function(){c.css({width:\"\",margin:\"\"}),e()}))))},getWidgetSidebarPosition:function(){var a,b;if(a=this.getSidebarWidgetsControl().setting(),b=_.indexOf(a,this.params.widget_id),b!==-1)return b},moveUp:function(){this._moveWidgetByOne(-1)},moveDown:function(){this._moveWidgetByOne(1)},_moveWidgetByOne:function(a){var b,c,d,e;b=this.getWidgetSidebarPosition(),c=this.getSidebarWidgetsControl().setting,d=Array.prototype.slice.call(c()),e=d[b+a],d[b+a]=this.params.widget_id,d[b]=e,c(d)},toggleWidgetMoveArea:function(a){var c,d=this;c=this.container.find(\".move-widget-area\"),\"undefined\"==typeof a&&(a=!c.hasClass(\"active\")),a&&(c.find(\".selected\").removeClass(\"selected\"),c.find(\"li\").filter(function(){return b(this).data(\"id\")===d.params.sidebar_id}).addClass(\"selected\"),this.container.find(\".move-widget-btn\").prop(\"disabled\",!0)),c.toggleClass(\"active\",a)},highlightSectionAndControl:function(){var a;a=this.container.is(\":hidden\")?this.container.closest(\".control-section\"):this.container,b(\".highlighted\").removeClass(\"highlighted\"),a.addClass(\"highlighted\"),setTimeout(function(){a.removeClass(\"highlighted\")},500)}}),g.Widgets.WidgetsPanel=g.Panel.extend({ready:function(){var a=this;g.Panel.prototype.ready.call(a),a.deferred.embedded.done(function(){var c,d,e;c=a.container.find(\".panel-meta\"),d=b(\"<div></div>\",{\"class\":\"no-widget-areas-rendered-notice\"}),d.append(b(\"<em></em>\",{text:f.noAreasRendered})),c.append(d),e=function(){return 0===_.filter(a.sections(),function(a){return a.active()}).length},d.toggle(e()),g.previewer.deferred.active.done(function(){d.toggle(e())}),g.bind(\"pane-contents-reflowed\",function(){var a=\"resolved\"===g.previewer.deferred.active.state()?\"fast\":0;e()?d.slideDown(a):d.slideUp(a)})})},isContextuallyActive:function(){var a=this;return a.active()}}),g.Widgets.SidebarSection=g.Section.extend({ready:function(){var a,b=this;g.Section.prototype.ready.call(this),a=g.Widgets.registeredSidebars.get(b.params.sidebarId),b.active.bind(function(b){a.set(\"is_rendered\",b)}),a.set(\"is_rendered\",b.active())}}),g.Widgets.SidebarControl=g.Control.extend({ready:function(){this.$controlSection=this.container.closest(\".control-section\"),this.$sectionContent=this.container.closest(\".accordion-section-content\"),this._setupModel(),this._setupSortable(),this._setupAddition(),this._applyCardinalOrderClassNames()},_setupModel:function(){var a=this;this.setting.bind(function(c,e){var f,h,i;h=_(e).difference(c),c=_(c).filter(function(a){var b=d(a);return!!g.Widgets.availableWidgets.findWhere({id_base:b.id_base})}),f=_(c).map(function(b){var c=g.Widgets.getWidgetFormControlForWidget(b);return c||(c=a.addWidget(b)),c}),f.sort(function(a,b){var d=_.indexOf(c,a.params.widget_id),e=_.indexOf(c,b.params.widget_id);return d-e}),i=0,_(f).each(function(b){b.priority(i),b.section(a.section()),i+=1}),a.priority(i),a._applyCardinalOrderClassNames(),_(f).each(function(b){b.params.sidebar_id=a.params.sidebar_id}),_(h).each(function(c){setTimeout(function(){var e,f,h,i,j,k=!1;g.each(function(b){if(b.id!==a.setting.id&&0===b.id.indexOf(\"sidebars_widgets[\")&&\"sidebars_widgets[wp_inactive_widgets]\"!==b.id){var d,e=b();d=_.indexOf(e,c),-1!==d&&(k=!0)}}),k||(e=g.Widgets.getWidgetFormControlForWidget(c),f=e&&b.contains(document,e.container[0])&&!b.contains(a.$sectionContent[0],e.container[0]),e&&!f&&(g.control.remove(e.id),e.container.remove()),g.Widgets.savedWidgetIds[c]&&(h=g.value(\"sidebars_widgets[wp_inactive_widgets]\")().slice(),h.push(c),g.value(\"sidebars_widgets[wp_inactive_widgets]\")(_(h).unique())),i=d(c).id_base,j=g.Widgets.availableWidgets.findWhere({id_base:i}),j&&!j.get(\"is_multi\")&&j.set(\"is_disabled\",!1))})})})},_setupSortable:function(){var a=this;this.isReordering=!1,this.$sectionContent.sortable({items:\"> .customize-control-widget_form\",handle:\".widget-top\",axis:\"y\",tolerance:\"pointer\",connectWith:\".accordion-section-content:has(.customize-control-sidebar_widgets)\",update:function(){var c,d=a.$sectionContent.sortable(\"toArray\");c=b.map(d,function(a){return b(\"#\"+a).find(\":input[name=widget-id]\").val()}),a.setting(c)}}),this.$controlSection.find(\".accordion-section-title\").droppable({accept:\".customize-control-widget_form\",over:function(){var b=g.section(a.section.get());b.expand({allowMultiple:!0,completeCallback:function(){g.section.each(function(a){a.container.find(\".customize-control-sidebar_widgets\").length&&a.container.find(\".accordion-section-content:first\").sortable(\"refreshPositions\")})}})}}),this.container.find(\".reorder-toggle\").on(\"click\",function(){a.toggleReordering(!a.isReordering)})},_setupAddition:function(){var a=this;this.container.find(\".add-new-widget\").on(\"click\",function(){var c=b(this);a.$sectionContent.hasClass(\"reordering\")||(b(\"body\").hasClass(\"adding-widget\")?(c.attr(\"aria-expanded\",\"false\"),g.Widgets.availableWidgetsPanel.close()):(c.attr(\"aria-expanded\",\"true\"),g.Widgets.availableWidgetsPanel.open(a)))})},_applyCardinalOrderClassNames:function(){var a=[];return _.each(this.setting(),function(b){var c=g.Widgets.getWidgetFormControlForWidget(b);c&&a.push(c)}),0===a.length||1===g.Widgets.registeredSidebars.length&&a.length<=1?void this.container.find(\".reorder-toggle\").hide():(this.container.find(\".reorder-toggle\").show(),b(a).each(function(){b(this.container).removeClass(\"first-widget\").removeClass(\"last-widget\").find(\".move-widget-down, .move-widget-up\").prop(\"tabIndex\",0)}),_.first(a).container.addClass(\"first-widget\").find(\".move-widget-up\").prop(\"tabIndex\",-1),void _.last(a).container.addClass(\"last-widget\").find(\".move-widget-down\").prop(\"tabIndex\",-1))},toggleReordering:function(b){var c=this.$sectionContent.find(\".add-new-widget\"),d=this.container.find(\".reorder-toggle\"),e=this.$sectionContent.find(\".widget-title\");b=Boolean(b),b!==this.$sectionContent.hasClass(\"reordering\")&&(this.isReordering=b,this.$sectionContent.toggleClass(\"reordering\",b),b?(_(this.getWidgetFormControls()).each(function(a){a.collapse()}),c.attr({tabindex:\"-1\",\"aria-hidden\":\"true\"}),d.attr(\"aria-label\",f.reorderLabelOff),a.a11y.speak(f.reorderModeOn),e.attr(\"aria-hidden\",\"true\")):(c.removeAttr(\"tabindex aria-hidden\"),d.attr(\"aria-label\",f.reorderLabelOn),a.a11y.speak(f.reorderModeOff),e.attr(\"aria-hidden\",\"false\")))},getWidgetFormControls:function(){var a=[];return _(this.setting()).each(function(b){var c=e(b),d=g.control(c);d&&a.push(d)}),a},addWidget:function(a){var c,e,f,h,i,j,k,l,m,n,o=this,p=\"widget_form\",q=d(a),r=q.number,s=q.id_base,t=g.Widgets.availableWidgets.findWhere({id_base:s});return!!t&&(!(r&&!t.get(\"is_multi\"))&&(t.get(\"is_multi\")&&!r&&(t.set(\"multi_number\",t.get(\"multi_number\")+1),r=t.get(\"multi_number\")),c=b.trim(b(\"#widget-tpl-\"+t.get(\"id\")).html()),t.get(\"is_multi\")?c=c.replace(/<[^<>]+>/g,function(a){return a.replace(/__i__|%i%/g,r)}):t.set(\"is_disabled\",!0),e=b(c),f=b(\"<li/>\").addClass(\"customize-control\").addClass(\"customize-control-\"+p).append(e),f.find(\"> .widget-icon\").remove(),t.get(\"is_multi\")&&(f.find('input[name=\"widget_number\"]').val(r),f.find('input[name=\"multi_number\"]').val(r)),a=f.find('[name=\"widget-id\"]').val(),f.hide(),i=\"widget_\"+t.get(\"id_base\"),t.get(\"is_multi\")&&(i+=\"[\"+r+\"]\"),f.attr(\"id\",\"customize-control-\"+i.replace(/\\]/g,\"\").replace(/\\[/g,\"-\")),j=g.has(i),j||(m={transport:g.Widgets.data.selectiveRefreshableWidgets[t.get(\"id_base\")]?\"postMessage\":\"refresh\",previewer:this.setting.previewer},n=g.create(i,i,\"\",m),n.set({})),h=g.controlConstructor[p],k=new h(i,{params:{settings:{\"default\":i},content:f,sidebar_id:o.params.sidebar_id,widget_id:a,widget_id_base:t.get(\"id_base\"),type:p,is_new:!j,width:t.get(\"width\"),height:t.get(\"height\"),is_wide:t.get(\"is_wide\"),active:!0},previewer:o.setting.previewer}),g.control.add(i,k),g.each(function(b){if(b.id!==o.setting.id&&0===b.id.indexOf(\"sidebars_widgets[\")){var c=b().slice(),d=_.indexOf(c,a);-1!==d&&(c.splice(d),b(c))}}),l=this.setting().slice(),-1===_.indexOf(l,a)&&(l.push(a),this.setting(l)),f.slideDown(function(){j&&k.updateWidget({instance:k.setting()})}),k))}}),b.extend(g.panelConstructor,{widgets:g.Widgets.WidgetsPanel}),b.extend(g.sectionConstructor,{sidebar:g.Widgets.SidebarSection}),b.extend(g.controlConstructor,{widget_form:g.Widgets.WidgetControl,sidebar_widgets:g.Widgets.SidebarControl}),g.bind(\"ready\",function(){g.Widgets.availableWidgetsPanel=new g.Widgets.AvailableWidgetsPanelView({collection:g.Widgets.availableWidgets}),g.previewer.bind(\"highlight-widget-control\",g.Widgets.highlightWidgetFormControl),g.previewer.bind(\"focus-widget-control\",g.Widgets.focusWidgetFormControl)}),g.Widgets.highlightWidgetFormControl=function(a){var b=g.Widgets.getWidgetFormControlForWidget(a);b&&b.highlightSectionAndControl()},g.Widgets.focusWidgetFormControl=function(a){var b=g.Widgets.getWidgetFormControlForWidget(a);b&&b.focus()},g.Widgets.getSidebarWidgetControlContainingWidget=function(a){var b=null;return g.control.each(function(c){\"sidebar_widgets\"===c.params.type&&-1!==_.indexOf(c.setting(),a)&&(b=c)}),b},g.Widgets.getWidgetFormControlForWidget=function(a){var b=null;return g.control.each(function(c){\"widget_form\"===c.params.type&&c.params.widget_id===a&&(b=c)}),b},b(document).on(\"widget-added\",function(a,b){var e,f,h,i;e=d(b.find(\"> .widget-inside > .form > .widget-id\").val()),\"nav_menu\"===e.id_base&&(f=g.control(\"widget_nav_menu[\"+String(e.number)+\"]\"),f&&(h=b.find('select[name*=\"nav_menu\"]'),i=b.find(\".edit-selected-nav-menu > button\"),0!==h.length&&0!==i.length&&(h.on(\"change\",function(){g.section.has(\"nav_menu[\"+h.val()+\"]\")?i.parent().show():i.parent().hide()}),i.on(\"click\",function(){var a=g.section(\"nav_menu[\"+h.val()+\"]\");a&&c(a,f)}))))})}}(window.wp,jQuery);\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\js\\theme.js:\n   38  \t\t// Map `section.description` to `description`\n   39  \t\t// as the API sometimes returns it differently\n   40: \t\tif ( this.has( 'sections' ) ) {\n   41: \t\t\tdescription = this.get( 'sections' ).description;\n   42  \t\t\tthis.set({ description: description });\n   43  \t\t}\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\js\\theme.min.js:\n    1: window.wp=window.wp||{},function(a){var b,c;b=wp.themes=wp.themes||{},b.data=_wpThemeSettings,c=b.data.l10n,b.isInstall=!!b.data.settings.isInstall,_.extend(b,{model:{},view:{},routes:{},router:{},template:wp.template}),b.Model=Backbone.Model.extend({initialize:function(){var a;_.indexOf(b.data.installedThemes,this.get(\"slug\"))!==-1&&this.set({installed:!0}),this.set({id:this.get(\"slug\")||this.get(\"id\")}),this.has(\"sections\")&&(a=this.get(\"sections\").description,this.set({description:a}))}}),b.view.Appearance=wp.Backbone.View.extend({el:\"#wpbody-content .wrap .theme-browser\",window:a(window),page:0,initialize:function(a){_.bindAll(this,\"scroller\"),this.SearchView=a.SearchView?a.SearchView:b.view.Search,this.window.bind(\"scroll\",_.throttle(this.scroller,300))},render:function(){this.view=new b.view.Themes({collection:this.collection,parent:this}),this.search(),this.view.render(),this.$el.empty().append(this.view.el).addClass(\"rendered\")},searchContainer:a(\"#wpbody h1:first\"),search:function(){var d,e=this;1!==b.data.themes.length&&(d=new this.SearchView({collection:e.collection,parent:this}),d.render(),this.searchContainer.append(a.parseHTML('<label class=\"screen-reader-text\" for=\"wp-filter-search-input\">'+c.search+\"</label>\")).append(d.el))},scroller:function(){var a,b,c=this;a=this.window.scrollTop()+c.window.height(),b=c.$el.offset().top+c.$el.outerHeight(!1)-c.window.height(),b=Math.round(.9*b),a>b&&this.trigger(\"theme:scroll\")}}),b.Collection=Backbone.Collection.extend({model:b.Model,terms:\"\",doSearch:function(c){this.terms!==c&&(this.terms=c,this.terms.length>0&&this.search(this.terms),\"\"===this.terms&&(this.reset(b.data.themes),a(\"body\").removeClass(\"no-results\")),this.trigger(\"themes:update\"))},search:function(c){var d,e,f,g,h,i;this.reset(b.data.themes,{silent:!0}),c=c.replace(/[-\\/\\\\^$*+?.()|[\\]{}]/g,\"\\\\$&\"),c=c.replace(/ /g,\")(?=.*\"),d=new RegExp(\"^(?=.*\"+c+\").+\",\"i\"),e=this.filter(function(a){return g=a.get(\"name\").replace(/(<([^>]+)>)/gi,\"\"),h=a.get(\"description\").replace(/(<([^>]+)>)/gi,\"\"),i=a.get(\"author\").replace(/(<([^>]+)>)/gi,\"\"),f=_.union([g,a.get(\"id\"),h,i,a.get(\"tags\")]),d.test(a.get(\"author\"))&&c.length>2&&a.set(\"displayAuthor\",!0),d.test(f)}),0===e.length?this.trigger(\"query:empty\"):a(\"body\").removeClass(\"no-results\"),this.reset(e)},paginate:function(a){var b=this;return a=a||0,b=_(b.rest(20*a)),b=_(b.first(20))},count:!1,query:function(b){var c,d,e,f=this.queries,g=this;if(this.currentQuery.request=b,c=_.find(f,function(a){return _.isEqual(a.request,b)}),d=_.has(b,\"page\"),d||(this.currentQuery.page=1),c||d){if(d)return this.apiCall(b,d).done(function(a){g.add(a.themes),g.trigger(\"query:success\"),g.loadingThemes=!1}).fail(function(){g.trigger(\"query:fail\")});0===c.themes.length?g.trigger(\"query:empty\"):a(\"body\").removeClass(\"no-results\"),_.isNumber(c.total)&&(this.count=c.total),this.reset(c.themes),c.total||(this.count=this.length),this.trigger(\"themes:update\"),this.trigger(\"query:success\",this.count)}else c=this.apiCall(b).done(function(a){a.themes&&(g.reset(a.themes),e=a.info.results,f.push({themes:a.themes,request:b,total:e})),g.trigger(\"themes:update\"),g.trigger(\"query:success\",e),a.themes&&0===a.themes.length&&g.trigger(\"query:empty\")}).fail(function(){g.trigger(\"query:fail\")})},queries:[],currentQuery:{page:1,request:{}},apiCall:function(b,c){return wp.ajax.send(\"query-themes\",{data:{request:_.extend({per_page:100,fields:{description:!0,tested:!0,requires:!0,rating:!0,downloaded:!0,downloadLink:!0,last_updated:!0,homepage:!0,num_ratings:!0}},b)},beforeSend:function(){c||a(\"body\").addClass(\"loading-content\").removeClass(\"no-results\")}})},loadingThemes:!1}),b.view.Theme=wp.Backbone.View.extend({className:\"theme\",state:\"grid\",html:b.template(\"theme\"),events:{click:b.isInstall?\"preview\":\"expand\",keydown:b.isInstall?\"preview\":\"expand\",touchend:b.isInstall?\"preview\":\"expand\",keyup:\"addFocus\",touchmove:\"preventExpand\",\"click .theme-install\":\"installTheme\",\"click .update-message\":\"updateTheme\"},touchDrag:!1,initialize:function(){this.model.on(\"change\",this.render,this)},render:function(){var a=this.model.toJSON();this.$el.html(this.html(a)).attr({tabindex:0,\"aria-describedby\":a.id+\"-action \"+a.id+\"-name\",\"data-slug\":a.id}),this.activeTheme(),this.model.get(\"displayAuthor\")&&this.$el.addClass(\"display-author\")},activeTheme:function(){this.model.get(\"active\")&&this.$el.addClass(\"active\")},addFocus:function(){var b=a(\":focus\").hasClass(\"theme\")?a(\":focus\"):a(\":focus\").parents(\".theme\");a(\".theme.focus\").removeClass(\"focus\"),b.addClass(\"focus\")},expand:function(c){var d=this;if(c=c||window.event,\"keydown\"!==c.type||13===c.which||32===c.which)return this.touchDrag===!0?this.touchDrag=!1:void(a(c.target).is(\".theme-actions a\")||a(c.target).is(\".theme-actions a, .update-message, .button-link, .notice-dismiss\")||(b.focusedTheme=this.$el,this.trigger(\"theme:expand\",d.model.cid)))},preventExpand:function(){this.touchDrag=!0},preview:function(c){var d,e,f=this;return c=c||window.event,this.touchDrag===!0?this.touchDrag=!1:void(a(c.target).not(\".install-theme-preview\").parents(\".theme-actions\").length||\"keydown\"===c.type&&13!==c.which&&32!==c.which||\"keydown\"===c.type&&13!==c.which&&a(\":focus\").hasClass(\"button\")||(c.preventDefault(),c=c||window.event,b.focusedTheme=this.$el,e=new b.view.Preview({model:this.model}),e.render(),this.setNavButtonsState(),1===this.model.collection.length?e.$el.addClass(\"no-navigation\"):e.$el.removeClass(\"no-navigation\"),a(\"div.wrap\").append(e.el),this.listenTo(e,\"theme:next\",function(){return d=f.model,_.isUndefined(f.current)||(d=f.current),f.current=f.model.collection.at(f.model.collection.indexOf(d)+1),_.isUndefined(f.current)?(f.options.parent.parent.trigger(\"theme:end\"),f.current=d):(e.model=f.current,e.render(),this.setNavButtonsState(),void a(\".next-theme\").focus())}).listenTo(e,\"theme:previous\",function(){d=f.model,0!==f.model.collection.indexOf(f.current)&&(_.isUndefined(f.current)||(d=f.current),f.current=f.model.collection.at(f.model.collection.indexOf(d)-1),_.isUndefined(f.current)||(e.model=f.current,e.render(),this.setNavButtonsState(),a(\".previous-theme\").focus()))}),this.listenTo(e,\"preview:close\",function(){f.current=f.model})))},setNavButtonsState:function(){var b=a(\".theme-install-overlay\"),c=_.isUndefined(this.current)?this.model:this.current;0===this.model.collection.indexOf(c)&&b.find(\".previous-theme\").addClass(\"disabled\"),_.isUndefined(this.model.collection.at(this.model.collection.indexOf(c)+1))&&b.find(\".next-theme\").addClass(\"disabled\")},installTheme:function(b){var c=this;b.preventDefault(),wp.updates.maybeRequestFilesystemCredentials(b),a(document).on(\"wp-theme-install-success\",function(a,b){c.model.get(\"id\")===b.slug&&c.model.set({installed:!0})}),wp.updates.installTheme({slug:a(b.target).data(\"slug\")})},updateTheme:function(b){var c=this;b.preventDefault(),wp.updates.maybeRequestFilesystemCredentials(b),a(document).on(\"wp-theme-update-success\",function(a,b){c.model.off(\"change\",c.render,c),c.model.get(\"id\")===b.slug&&c.model.set({hasUpdate:!1,version:b.newVersion}),c.model.on(\"change\",c.render,c)}),wp.updates.updateTheme({slug:a(b.target).parents(\"div.theme\").first().data(\"slug\")})}}),b.view.Details=wp.Backbone.View.extend({className:\"theme-overlay\",events:{click:\"collapse\",\"click .delete-theme\":\"deleteTheme\",\"click .left\":\"previousTheme\",\"click .right\":\"nextTheme\",\"click #update-theme\":\"updateTheme\"},html:b.template(\"theme-single\"),render:function(){var a=this.model.toJSON();this.$el.html(this.html(a)),this.activeTheme(),this.navigation(),this.screenshotCheck(this.$el),this.containFocus(this.$el)},activeTheme:function(){this.$el.toggleClass(\"active\",this.model.get(\"active\"))},containFocus:function(b){_.delay(function(){a(\".theme-wrap a.button-primary:visible\").focus()},100),b.on(\"keydown.wp-themes\",function(a){var c=b.find(\".theme-header button:not(.disabled)\").first(),d=b.find(\".theme-actions a:visible\").last();9===a.which&&(c[0]===a.target&&a.shiftKey?(d.focus(),a.preventDefault()):d[0]!==a.target||a.shiftKey||(c.focus(),a.preventDefault()))})},collapse:function(c){var d,e=this;c=c||window.event,1!==b.data.themes.length&&(a(c.target).is(\".theme-backdrop\")||a(c.target).is(\".close\")||27===c.keyCode)&&(a(\"body\").addClass(\"closing-overlay\"),this.$el.fadeOut(130,function(){a(\"body\").removeClass(\"closing-overlay\"),e.closeOverlay(),d=document.body.scrollTop,b.router.navigate(b.router.baseUrl(\"\")),document.body.scrollTop=d,b.focusedTheme&&b.focusedTheme.focus()}))},navigation:function(){this.model.cid===this.model.collection.at(0).cid&&this.$el.find(\".left\").addClass(\"disabled\").prop(\"disabled\",!0),this.model.cid===this.model.collection.at(this.model.collection.length-1).cid&&this.$el.find(\".right\").addClass(\"disabled\").prop(\"disabled\",!0)},closeOverlay:function(){a(\"body\").removeClass(\"modal-open\"),this.remove(),this.unbind(),this.trigger(\"theme:collapse\")},updateTheme:function(b){var c=this;b.preventDefault(),wp.updates.maybeRequestFilesystemCredentials(b),a(document).on(\"wp-theme-update-success\",function(a,b){c.model.get(\"id\")===b.slug&&c.model.set({hasUpdate:!1,version:b.newVersion}),c.render()}),wp.updates.updateTheme({slug:a(b.target).data(\"slug\")})},deleteTheme:function(c){var d=this,e=d.model.collection,f=b;c.preventDefault(),window.confirm(wp.themes.data.settings.confirmDelete)&&(wp.updates.maybeRequestFilesystemCredentials(c),a(document).one(\"wp-theme-delete-success\",function(b,c){d.$el.find(\".close\").trigger(\"click\"),a('[data-slug=\"'+c.slug+'\"').css({backgroundColor:\"#faafaa\"}).fadeOut(350,function(){a(this).remove(),f.data.themes=_.without(f.data.themes,_.findWhere(f.data.themes,{id:c.slug})),a(\".wp-filter-search\").val(\"\"),e.doSearch(\"\"),e.remove(d.model),e.trigger(\"themes:update\")})}),wp.updates.deleteTheme({slug:this.model.get(\"id\")}))},nextTheme:function(){var a=this;return a.trigger(\"theme:next\",a.model.cid),!1},previousTheme:function(){var a=this;return a.trigger(\"theme:previous\",a.model.cid),!1},screenshotCheck:function(a){var b,c;b=a.find(\".screenshot img\"),c=new Image,c.src=b.attr(\"src\"),c.width&&c.width<=300&&a.addClass(\"small-screenshot\")}}),b.view.Preview=b.view.Details.extend({className:\"wp-full-overlay expanded\",el:\".theme-install-overlay\",events:{\"click .close-full-overlay\":\"close\",\"click .collapse-sidebar\":\"collapse\",\"click .devices button\":\"previewDevice\",\"click .previous-theme\":\"previousTheme\",\"click .next-theme\":\"nextTheme\",keyup:\"keyEvent\",\"click .theme-install\":\"installTheme\"},html:b.template(\"theme-preview\"),render:function(){var c,d=this,e=this.model.toJSON();this.$el.removeClass(\"iframe-ready\").html(this.html(e)),c=this.$el.data(\"current-preview-device\"),c&&d.tooglePreviewDeviceButtons(c),b.router.navigate(b.router.baseUrl(b.router.themePath+this.model.get(\"id\")),{replace:!0}),this.$el.fadeIn(200,function(){a(\"body\").addClass(\"theme-installer-active full-overlay-active\"),a(\".close-full-overlay\").focus()}),this.$el.find(\"iframe\").one(\"load\",function(){d.iframeLoaded()})},iframeLoaded:function(){this.$el.addClass(\"iframe-ready\")},close:function(){return this.$el.fadeOut(200,function(){a(\"body\").removeClass(\"theme-installer-active full-overlay-active\"),b.focusedTheme&&b.focusedTheme.focus()}).removeClass(\"iframe-ready\"),b.router.navigate(b.router.baseUrl(\"\")),this.trigger(\"preview:close\"),this.undelegateEvents(),this.unbind(),!1},collapse:function(b){var d=a(b.currentTarget);return\"true\"===d.attr(\"aria-expanded\")?d.attr({\"aria-expanded\":\"false\",\"aria-label\":c.expandSidebar}):d.attr({\"aria-expanded\":\"true\",\"aria-label\":c.collapseSidebar}),this.$el.toggleClass(\"collapsed\").toggleClass(\"expanded\"),!1},previewDevice:function(b){var c=a(b.currentTarget).data(\"device\");this.$el.removeClass(\"preview-desktop preview-tablet preview-mobile\").addClass(\"preview-\"+c).data(\"current-preview-device\",c),this.tooglePreviewDeviceButtons(c)},tooglePreviewDeviceButtons:function(b){var c=a(\".wp-full-overlay-footer .devices\");c.find(\"button\").removeClass(\"active\").attr(\"aria-pressed\",!1),c.find(\"button.preview-\"+b).addClass(\"active\").attr(\"aria-pressed\",!0)},keyEvent:function(a){27===a.keyCode&&(this.undelegateEvents(),this.close()),39===a.keyCode&&_.once(this.nextTheme()),37===a.keyCode&&this.previousTheme()},installTheme:function(b){var c=this,d=a(b.target);b.preventDefault(),d.hasClass(\"disabled\")||(wp.updates.maybeRequestFilesystemCredentials(b),a(document).on(\"wp-theme-install-success\",function(){c.model.set({installed:!0})}),wp.updates.installTheme({slug:d.data(\"slug\")}))}}),b.view.Themes=wp.Backbone.View.extend({className:\"themes wp-clearfix\",$overlay:a(\"div.theme-overlay\"),index:0,count:a(\".wrap .theme-count\"),liveThemeCount:0,initialize:function(b){var c=this;this.parent=b.parent,this.setView(\"grid\"),c.currentTheme(),this.listenTo(c.collection,\"themes:update\",function(){c.parent.page=0,c.currentTheme(),c.render(this)}),this.listenTo(c.collection,\"query:success\",function(a){_.isNumber(a)?(c.count.text(a),c.announceSearchResults(a)):(c.count.text(c.collection.length),c.announceSearchResults(c.collection.length))}),this.listenTo(c.collection,\"query:empty\",function(){a(\"body\").addClass(\"no-results\")}),this.listenTo(this.parent,\"theme:scroll\",function(){c.renderThemes(c.parent.page)}),this.listenTo(this.parent,\"theme:close\",function(){c.overlay&&c.overlay.closeOverlay()}),a(\"body\").on(\"keyup\",function(b){c.overlay&&(a(\"#request-filesystem-credentials-dialog\").is(\":visible\")||(39===b.keyCode&&c.overlay.nextTheme(),37===b.keyCode&&c.overlay.previousTheme(),27===b.keyCode&&c.overlay.collapse(b)))})},render:function(){this.$el.empty(),1===b.data.themes.length&&(this.singleTheme=new b.view.Details({model:this.collection.models[0]}),this.singleTheme.render(),this.$el.addClass(\"single-theme\"),this.$el.append(this.singleTheme.el)),this.options.collection.size()>0&&this.renderThemes(this.parent.page),this.liveThemeCount=this.collection.count?this.collection.count:this.collection.length,this.count.text(this.liveThemeCount),b.isInstall||this.announceSearchResults(this.liveThemeCount)},renderThemes:function(d){var e=this;return e.instance=e.collection.paginate(d),0===e.instance.size()?void this.parent.trigger(\"theme:end\"):(!b.isInstall&&d>=1&&a(\".add-new-theme\").remove(),e.instance.each(function(a){e.theme=new b.view.Theme({model:a,parent:e}),e.theme.render(),e.$el.append(e.theme.el),e.listenTo(e.theme,\"theme:expand\",e.expand,e)}),!b.isInstall&&b.data.settings.canInstall&&this.$el.append('<div class=\"theme add-new-theme\"><a href=\"'+b.data.settings.installURI+'\"><div class=\"theme-screenshot\"><span></span></div><h2 class=\"theme-name\">'+c.addNew+\"</h2></a></div>\"),void this.parent.page++)},currentTheme:function(){var a,b=this;a=b.collection.findWhere({active:!0}),a&&(b.collection.remove(a),b.collection.add(a,{at:0}))},setView:function(a){return a},expand:function(c){var d,e,f=this;this.model=f.collection.get(c),b.router.navigate(b.router.baseUrl(b.router.themePath+this.model.id)),this.setView(\"detail\"),a(\"body\").addClass(\"modal-open\"),this.overlay=new b.view.Details({model:f.model}),this.overlay.render(),this.model.get(\"hasUpdate\")&&(d=a('[data-slug=\"'+this.model.id+'\"]'),e=a(this.overlay.el),d.find(\".updating-message\").length?(e.find(\".notice-warning h3\").remove(),e.find(\".notice-warning\").removeClass(\"notice-large\").addClass(\"updating-message\").find(\"p\").text(wp.updates.l10n.updating)):d.find(\".notice-error\").length&&e.find(\".notice-warning\").remove()),this.$overlay.html(this.overlay.el),this.listenTo(this.overlay,\"theme:next\",function(){f.next([f.model.cid])}).listenTo(this.overlay,\"theme:previous\",function(){f.previous([f.model.cid])})},next:function(a){var b,c,d=this;b=d.collection.get(a[0]),c=d.collection.at(d.collection.indexOf(b)+1),void 0!==c&&(this.overlay.closeOverlay(),d.theme.trigger(\"theme:expand\",c.cid))},previous:function(a){var b,c,d=this;b=d.collection.get(a[0]),c=d.collection.at(d.collection.indexOf(b)-1),void 0!==c&&(this.overlay.closeOverlay(),d.theme.trigger(\"theme:expand\",c.cid))},announceSearchResults:function(a){0===a?wp.a11y.speak(c.noThemesFound):wp.a11y.speak(c.themesFound.replace(\"%d\",a))}}),b.view.Search=wp.Backbone.View.extend({tagName:\"input\",className:\"wp-filter-search\",id:\"wp-filter-search-input\",searching:!1,attributes:{placeholder:c.searchPlaceholder,type:\"search\",\"aria-describedby\":\"live-search-desc\"},events:{input:\"search\",keyup:\"search\",blur:\"pushState\"},initialize:function(a){this.parent=a.parent,this.listenTo(this.parent,\"theme:close\",function(){this.searching=!1})},search:function(a){\"keyup\"===a.type&&27===a.which&&(a.target.value=\"\"),this.doSearch(a)},doSearch:_.debounce(function(a){var c={};this.collection.doSearch(a.target.value),this.searching&&13!==a.which?c.replace=!0:this.searching=!0,a.target.value?b.router.navigate(b.router.baseUrl(b.router.searchPath+a.target.value),c):b.router.navigate(b.router.baseUrl(\"\"))},500),pushState:function(a){var c=b.router.baseUrl(\"\");a.target.value&&(c=b.router.baseUrl(b.router.searchPath+a.target.value)),this.searching=!1,b.router.navigate(c)}}),b.Router=Backbone.Router.extend({routes:{\"themes.php?theme=:slug\":\"theme\",\"themes.php?search=:query\":\"search\",\"themes.php?s=:query\":\"search\",\"themes.php\":\"themes\",\"\":\"themes\"},baseUrl:function(a){return\"themes.php\"+a},themePath:\"?theme=\",searchPath:\"?search=\",search:function(b){a(\".wp-filter-search\").val(b)},themes:function(){a(\".wp-filter-search\").val(\"\")},navigate:function(){Backbone.history._hasPushState&&Backbone.Router.prototype.navigate.apply(this,arguments)}}),b.Run={init:function(){this.themes=new b.Collection(b.data.themes),this.view=new b.view.Appearance({collection:this.themes}),this.render()},render:function(){this.view.render(),this.routes(),Backbone.history.start({root:b.data.settings.adminUrl,pushState:!0,hashChange:!1})},routes:function(){var c=this;b.router=new b.Router,b.router.on(\"route:theme\",function(a){c.view.view.expand(a)}),b.router.on(\"route:themes\",function(){c.themes.doSearch(\"\"),c.view.trigger(\"theme:close\")}),b.router.on(\"route:search\",function(){a(\".wp-filter-search\").trigger(\"keyup\")}),this.extraRoutes()},extraRoutes:function(){return!1}},b.view.InstallerSearch=b.view.Search.extend({events:{input:\"search\",keyup:\"search\"},terms:\"\",search:function(a){(\"keyup\"!==a.type||9!==a.which&&16!==a.which)&&(this.collection=this.options.parent.view.collection,\"keyup\"===a.type&&27===a.which&&(a.target.value=\"\"),this.doSearch(a.target.value))},doSearch:_.debounce(function(c){var d={};this.terms!==c&&(this.terms=c,d.search=c,\"author:\"===c.substring(0,7)&&(d.search=\"\",d.author=c.slice(7)),\"tag:\"===c.substring(0,4)&&(d.search=\"\",d.tag=[c.slice(4)]),a(\".filter-links li > a.current\").removeClass(\"current\"),a(\"body\").removeClass(\"show-filters filters-applied show-favorites-form\"),this.collection.query(d),b.router.navigate(b.router.baseUrl(b.router.searchPath+c),{replace:!0}))},500)}),b.view.Installer=b.view.Appearance.extend({el:\"#wpbody-content .wrap\",events:{\"click .filter-links li > a\":\"onSort\",\"click .theme-filter\":\"onFilter\",\"click .drawer-toggle\":\"moreFilters\",\"click .filter-drawer .apply-filters\":\"applyFilters\",'click .filter-group [type=\"checkbox\"]':\"addFilter\",\"click .filter-drawer .clear-filters\":\"clearFilters\",\"click .filtered-by\":\"backToFilters\",\"click .favorites-form-submit\":\"saveUsername\",\"keyup #wporg-username-input\":\"saveUsername\"},render:function(){var d=this;this.search(),this.uploader(),this.collection=new b.Collection,this.listenTo(this,\"theme:end\",function(){d.collection.loadingThemes||(d.collection.loadingThemes=!0,d.collection.currentQuery.page++,_.extend(d.collection.currentQuery.request,{page:d.collection.currentQuery.page}),d.collection.query(d.collection.currentQuery.request))}),this.listenTo(this.collection,\"query:success\",function(){a(\"body\").removeClass(\"loading-content\"),a(\".theme-browser\").find(\"div.error\").remove()}),this.listenTo(this.collection,\"query:fail\",function(){a(\"body\").removeClass(\"loading-content\"),a(\".theme-browser\").find(\"div.error\").remove(),a(\".theme-browser\").find(\"div.themes\").before('<div class=\"error\"><p>'+c.error+\"</p></div>\")}),this.view&&this.view.remove(),this.view=new b.view.Themes({collection:this.collection,parent:this}),this.page=0,this.$el.find(\".themes\").remove(),this.view.render(),this.$el.find(\".theme-browser\").append(this.view.el).addClass(\"rendered\")},browse:function(a){this.collection.query({browse:a})},onSort:function(c){var d=a(c.target),e=d.data(\"sort\");c.preventDefault(),a(\"body\").removeClass(\"filters-applied show-filters\"),d.hasClass(this.activeClass)||(this.sort(e),b.router.navigate(b.router.baseUrl(b.router.browsePath+e)))},sort:function(b){this.clearSearch(),a(\".filter-links li > a, .theme-filter\").removeClass(this.activeClass),a('[data-sort=\"'+b+'\"]').addClass(this.activeClass),\"favorites\"===b?a(\"body\").addClass(\"show-favorites-form\"):a(\"body\").removeClass(\"show-favorites-form\"),this.browse(b)},onFilter:function(b){var c,d=a(b.target),e=d.data(\"filter\");d.hasClass(this.activeClass)||(a(\".filter-links li > a, .theme-section\").removeClass(this.activeClass),d.addClass(this.activeClass),e&&(e=_.union([e,this.filtersChecked()]),c={tag:[e]},this.collection.query(c)))},addFilter:function(){this.filtersChecked()},applyFilters:function(b){var c,d=this.filtersChecked(),e={tag:d},f=a(\".filtered-by .tags\");b&&b.preventDefault(),a(\"body\").addClass(\"filters-applied\"),a(\".filter-links li > a.current\").removeClass(\"current\"),f.empty(),_.each(d,function(b){c=a('label[for=\"filter-id-'+b+'\"]').text(),f.append('<span class=\"tag\">'+c+\"</span>\")}),this.collection.query(e)},saveUsername:function(b){var c=a(\"#wporg-username-input\").val(),d=a(\"#wporg-username-nonce\").val(),e={browse:\"favorites\",user:c},f=this;if(b&&b.preventDefault(),\"keyup\"!==b.type||13===b.which)return wp.ajax.send(\"save-wporg-username\",{data:{_wpnonce:d,username:c},success:function(){f.collection.query(e)}})},filtersChecked:function(){var b=a(\".filter-group\").find(\":checkbox\"),c=[];return _.each(b.filter(\":checked\"),function(b){c.push(a(b).prop(\"value\"))}),0===c.length?(a(\".filter-drawer .apply-filters\").find(\"span\").text(\"\"),a(\".filter-drawer .clear-filters\").hide(),a(\"body\").removeClass(\"filters-applied\"),!1):(a(\".filter-drawer .apply-filters\").find(\"span\").text(c.length),a(\".filter-drawer .clear-filters\").css(\"display\",\"inline-block\"),c)},activeClass:\"current\",searchContainer:a(\".wp-filter .search-form\"),uploader:function(){var b=a(\".upload-view-toggle\"),c=a(document.body);b.on(\"click\",function(){c.toggleClass(\"show-upload-view\"),b.attr(\"aria-expanded\",c.hasClass(\"show-upload-view\"))})},moreFilters:function(c){return c.preventDefault(),a(\"body\").hasClass(\"filters-applied\")?this.backToFilters():a(\"body\").hasClass(\"show-filters\")&&this.filtersChecked()?this.addFilter():(this.clearSearch(),b.router.navigate(b.router.baseUrl(\"\")),void a(\"body\").toggleClass(\"show-filters\"))},clearFilters:function(b){var c=a(\".filter-group\").find(\":checkbox\"),d=this;b.preventDefault(),_.each(c.filter(\":checked\"),function(b){return a(b).prop(\"checked\",!1),d.filtersChecked()})},backToFilters:function(b){b&&b.preventDefault(),a(\"body\").removeClass(\"filters-applied\")},clearSearch:function(){a(\"#wp-filter-search-input\").val(\"\")}}),b.InstallerRouter=Backbone.Router.extend({routes:{\"theme-install.php?theme=:slug\":\"preview\",\"theme-install.php?browse=:sort\":\"sort\",\"theme-install.php?search=:query\":\"search\",\"theme-install.php\":\"sort\"},baseUrl:function(a){return\"theme-install.php\"+a},themePath:\"?theme=\",browsePath:\"?browse=\",searchPath:\"?search=\",search:function(b){a(\".wp-filter-search\").val(b)},navigate:function(){Backbone.history._hasPushState&&Backbone.Router.prototype.navigate.apply(this,arguments)}}),b.RunInstaller={init:function(){this.view=new b.view.Installer({section:\"featured\",SearchView:b.view.InstallerSearch}),this.render()},render:function(){this.view.render(),this.routes(),Backbone.history.start({root:b.data.settings.adminUrl,pushState:!0,hashChange:!1})},routes:function(){var c=this,d={};b.router=new b.InstallerRouter,b.router.on(\"route:preview\",function(a){d.theme=a,c.view.collection.query(d),c.view.collection.once(\"update\",function(){c.view.view.theme.preview()})}),b.router.on(\"route:sort\",function(a){a||(a=\"featured\"),c.view.sort(a),c.view.trigger(\"theme:close\")}),b.router.on(\"route:search\",function(){a(\".wp-filter-search\").focus().trigger(\"keyup\")}),this.extraRoutes()},extraRoutes:function(){return!1}},a(document).ready(function(){b.isInstall?b.RunInstaller.init():b.Run.init(),a(\".broken-themes .delete-theme\").on(\"click\",function(){return confirm(_wpThemeSettings.settings.confirmDelete)})})}(jQuery);var tb_position;jQuery(document).ready(function(a){tb_position=function(){var b=a(\"#TB_window\"),c=a(window).width(),d=a(window).height(),e=1040<c?1040:c,f=0;a(\"#wpadminbar\").length&&(f=parseInt(a(\"#wpadminbar\").css(\"height\"),10)),b.size()&&(b.width(e-50).height(d-45-f),a(\"#TB_iframeContent\").width(e-50).height(d-75-f),b.css({\"margin-left\":\"-\"+parseInt((e-50)/2,10)+\"px\"}),\"undefined\"!=typeof document.body.style.maxWidth&&b.css({top:20+f+\"px\",\"margin-top\":\"0\"}))},a(window).resize(function(){tb_position()})});\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\nav-menus.php:\n  730  \t\t\t<input type=\"hidden\" name=\"action\" value=\"add-menu-item\" />\n  731  \t\t\t<?php wp_nonce_field( 'add-menu_item', 'menu-settings-column-nonce' ); ?>\n  732: \t\t\t<?php do_accordion_sections( 'nav-menus', 'side', null ); ?>\n  733  \t\t</form>\n  734  \n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\options-discussion.php:\n  271  </table>\n  272  \n  273: <?php do_settings_sections('discussion'); ?>\n  274  \n  275  <?php submit_button(); ?>\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\options-general.php:\n  364  </table>\n  365  \n  366: <?php do_settings_sections('general'); ?>\n  367  \n  368  <?php submit_button(); ?>\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\options-media.php:\n  133  <?php endif; ?>\n  134  \n  135: <?php do_settings_sections('media'); ?>\n  136  \n  137  <?php submit_button(); ?>\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\options-permalink.php:\n  228  </table>\n  229  \n  230: <?php do_settings_sections('permalink'); ?>\n  231  \n  232  <?php submit_button(); ?>\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\options-reading.php:\n  144  </table>\n  145  \n  146: <?php do_settings_sections( 'reading' ); ?>\n  147  \n  148  <?php submit_button(); ?>\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\options-writing.php:\n  180  <?php } // multisite ?>\n  181  \n  182: <?php do_settings_sections('writing'); ?>\n  183  \n  184  <?php submit_button(); ?>\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\plugin-install.php:\n   89  'content'\t=>\n   90  \t'<p>' . __('If you know what you&#8217;re looking for, Search is your best bet. The Search screen has options to search the WordPress Plugin Directory for a particular Term, Author, or Tag. You can also search the directory by selecting popular tags. Tags in larger type mean more plugins have been labeled with that tag.') . '</p>' .\n   91: \t'<p>' . __( 'If you just want to get an idea of what&#8217;s available, you can browse Featured and Popular plugins by using the links above the plugins list. These sections rotate regularly.' ) . '</p>' .\n   92  \t'<p>' . __( 'You can also browse a user&#8217;s favorite plugins, by using the Favorites link above the plugins list and entering their WordPress.org username.' ) . '</p>' .\n   93  \t'<p>' . __( 'If you want to install a plugin that you&#8217;ve downloaded elsewhere, click the Upload Plugin button above the plugins list. You will be prompted to upload the .zip package, and once uploaded, you can activate the new plugin.' ) . '</p>'\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\update.php:\n  103  \t\t\t'fields' => array(\n  104  \t\t\t\t'short_description' => false,\n  105: \t\t\t\t'sections' => false,\n  106  \t\t\t\t'requires' => false,\n  107  \t\t\t\t'rating' => false,\n  ...\n  222  \n  223  \t\tcheck_admin_referer( 'install-theme_' . $theme );\n  224: \t\t$api = themes_api('theme_information', array('slug' => $theme, 'fields' => array('sections' => false, 'tags' => false) ) ); //Save on a bit of bandwidth.\n  225  \n  226  \t\tif ( is_wp_error($api) )\n\nD:\\Dev\\RoryDownie\\public_html\\wp-admin\\widgets.php:\n   51  'title'\t\t=> __('Overview'),\n   52  'content'\t=>\n   53: \t'<p>' . __('Widgets are independent sections of content that can be placed into any widgetized area provided by your theme (commonly called sidebars). To populate your sidebars/widget areas with individual widgets, drag and drop the title bars into the desired area. By default, only the first widget area is expanded. To populate additional widget areas, click on their title bars to expand them.') . '</p>\n   54  \t<p>' . __('The Available Widgets section contains all the widgets you can choose from. Once you drag a widget into a sidebar, it will open to allow you to configure its settings. When you are happy with the widget settings, click the Save button and the widget will go live on your site. If you click Delete, it will remove the widget.') . '</p>'\n   55  ) );\n\n120 matches across 34 files\n",
+			"settings":
+			{
+				"buffer_size": 126434,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Dev/RoryDownie",
+		"/D/Dev/RoryDownie/public_html",
+		"/D/Dev/RoryDownie/public_html/wp-content",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite"
+	],
+	"file_history":
+	[
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/content.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/includes/class-core-upgrader.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/admin-ajax.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/customize.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/admin.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/admin-functions.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/user/user-edit.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/user/profile.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/user/menu.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/user/about.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/user/admin.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/front-page.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/footer.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/style.css",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/functions.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/sections/latest_news.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/page.php",
+		"/D/Dev/RoryDownie/public_html/wp-admin/upgrade-functions.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/index.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/sections/pricing.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/sections/our_team.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/sections/about_us.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/header.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/home.php",
+		"/D/Dev/RoryDownie/public_html/wp-content/themes/zerif-lite/template-blog-large.php",
+		"/D/Dev/CWeb/angular2-cweb/src/assets/css/main.css",
+		"/C/Users/Chris/AppData/Local/Temp/Temp1_triangle.zip/triangle/template/multicolor/index.html",
+		"/D/Dev/CWeb/angular2-cweb/src/environments/environment.ts",
+		"/D/Dev/CWeb/angular2-cweb/index.html",
+		"/D/Dev/CWeb/angular2-cweb/src/index.html",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 3/Packages/User/AngularJS-js-completions.sublime-settings",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/C/Users/Chris/AppData/Roaming/Sublime Text 3/Packages/AngularJS-sublime-package-master/packages.json",
+		"/D/Dev/test/angular2-test/src/app/app.component.html",
+		"/D/Dev/test/angular2-test/src/app/app.component.ts",
+		"/D/Dev/test/angular2-test/src/app/simple-form/simple-form.component.ts",
+		"/D/Dev/bin/Flow/public/index.html",
+		"/D/Dev/bin/Flow/public/js/gservice.js",
+		"/D/Dev/bin/Flow/public/js/addCtrl.js",
+		"/D/Dev/bin/Flow/public/js/app.js",
+		"/D/Dev/bin/Flow/app/model.js",
+		"/D/Dev/bin/Flow/server.js",
+		"/D/Dev/bin/Flow/app/routes.js",
+		"/D/Dev/bin/Flow/public/style.css",
+		"/D/Dev/bin/Flow/node_modules/mongoose/index.js",
+		"/D/Dev/bin/Flow/node_modules/mongodb/lib/server.js",
+		"/D/Dev/bin/Flow/package.json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"D:\\Dev\\RoryDownie\\public_html\\wp-admin",
+			"D:\\Dev\\RoryDownie\\public_html",
+			"D:\\Dev\\RoryDownie\\public_html\\wp-admin"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sections",
+			"section order",
+			"secton order",
+			"order",
+			"member-details",
+			"pricing",
+			"prcing",
+			"our-team",
+			"about-us",
+			"pricing",
+			"pricing-member h2",
+			"pricing-member h3",
+			"member-details",
+			"zerif_about_us_header",
+			"header",
+			".dark-text ",
+			"header",
+			"white-text",
+			"about us",
+			"pricing",
+			"about us",
+			"pricing",
+			"focus",
+			"pricing",
+			"slider-bg",
+			"images",
+			"mean",
+			"scotch",
+			"holder",
+			"Scotch"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public_html/wp-content/themes/zerif-lite/functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 69859,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9348.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 126434,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										284,
+										292
+									],
+									[
+										584,
+										592
+									],
+									[
+										756,
+										764
+									],
+									[
+										1017,
+										1025
+									],
+									[
+										1309,
+										1317
+									],
+									[
+										1514,
+										1522
+									],
+									[
+										1793,
+										1801
+									],
+									[
+										2761,
+										2769
+									],
+									[
+										3153,
+										3161
+									],
+									[
+										3308,
+										3316
+									],
+									[
+										3611,
+										3619
+									],
+									[
+										3875,
+										3883
+									],
+									[
+										4217,
+										4225
+									],
+									[
+										4475,
+										4483
+									],
+									[
+										4759,
+										4767
+									],
+									[
+										5192,
+										5200
+									],
+									[
+										5246,
+										5254
+									],
+									[
+										5573,
+										5581
+									],
+									[
+										5630,
+										5638
+									],
+									[
+										5957,
+										5965
+									],
+									[
+										6037,
+										6045
+									],
+									[
+										6217,
+										6225
+									],
+									[
+										6455,
+										6463
+									],
+									[
+										7048,
+										7056
+									],
+									[
+										7624,
+										7632
+									],
+									[
+										7951,
+										7959
+									],
+									[
+										8001,
+										8009
+									],
+									[
+										8213,
+										8221
+									],
+									[
+										8265,
+										8273
+									],
+									[
+										8328,
+										8336
+									],
+									[
+										8492,
+										8500
+									],
+									[
+										8531,
+										8539
+									],
+									[
+										8793,
+										8801
+									],
+									[
+										8889,
+										8897
+									],
+									[
+										9223,
+										9231
+									],
+									[
+										9500,
+										9508
+									],
+									[
+										9683,
+										9691
+									],
+									[
+										9848,
+										9856
+									],
+									[
+										10002,
+										10010
+									],
+									[
+										10041,
+										10049
+									],
+									[
+										10169,
+										10177
+									],
+									[
+										10282,
+										10290
+									],
+									[
+										10349,
+										10357
+									],
+									[
+										10397,
+										10405
+									],
+									[
+										10471,
+										10479
+									],
+									[
+										10555,
+										10563
+									],
+									[
+										10831,
+										10839
+									],
+									[
+										10971,
+										10979
+									],
+									[
+										11161,
+										11169
+									],
+									[
+										11591,
+										11599
+									],
+									[
+										11645,
+										11653
+									],
+									[
+										12056,
+										12064
+									],
+									[
+										12372,
+										12380
+									],
+									[
+										12570,
+										12578
+									],
+									[
+										12686,
+										12694
+									],
+									[
+										12870,
+										12878
+									],
+									[
+										13160,
+										13168
+									],
+									[
+										13364,
+										13372
+									],
+									[
+										13597,
+										13605
+									],
+									[
+										13769,
+										13777
+									],
+									[
+										13934,
+										13942
+									],
+									[
+										14071,
+										14079
+									],
+									[
+										14088,
+										14096
+									],
+									[
+										14141,
+										14149
+									],
+									[
+										14359,
+										14367
+									],
+									[
+										14585,
+										14593
+									],
+									[
+										14820,
+										14828
+									],
+									[
+										15069,
+										15077
+									],
+									[
+										15184,
+										15192
+									],
+									[
+										15229,
+										15237
+									],
+									[
+										15331,
+										15339
+									],
+									[
+										15418,
+										15426
+									],
+									[
+										15435,
+										15443
+									],
+									[
+										15487,
+										15495
+									],
+									[
+										15734,
+										15742
+									],
+									[
+										15912,
+										15920
+									],
+									[
+										16135,
+										16143
+									],
+									[
+										16314,
+										16322
+									],
+									[
+										16353,
+										16361
+									],
+									[
+										16671,
+										16679
+									],
+									[
+										16875,
+										16883
+									],
+									[
+										17157,
+										17165
+									],
+									[
+										17310,
+										17318
+									],
+									[
+										17380,
+										17388
+									],
+									[
+										17576,
+										17584
+									],
+									[
+										21290,
+										21298
+									],
+									[
+										32180,
+										32188
+									],
+									[
+										32289,
+										32297
+									],
+									[
+										51640,
+										51648
+									],
+									[
+										57819,
+										57827
+									],
+									[
+										61926,
+										61934
+									],
+									[
+										67239,
+										67247
+									],
+									[
+										67471,
+										67479
+									],
+									[
+										67750,
+										67758
+									],
+									[
+										67994,
+										68002
+									],
+									[
+										68094,
+										68102
+									],
+									[
+										68247,
+										68255
+									],
+									[
+										68392,
+										68400
+									],
+									[
+										68512,
+										68520
+									],
+									[
+										68616,
+										68624
+									],
+									[
+										68981,
+										68989
+									],
+									[
+										69126,
+										69134
+									],
+									[
+										69346,
+										69354
+									],
+									[
+										69692,
+										69700
+									],
+									[
+										88906,
+										88914
+									],
+									[
+										97260,
+										97268
+									],
+									[
+										97311,
+										97319
+									],
+									[
+										97880,
+										97888
+									],
+									[
+										97905,
+										97913
+									],
+									[
+										122793,
+										122801
+									],
+									[
+										122973,
+										122981
+									],
+									[
+										123151,
+										123159
+									],
+									[
+										123331,
+										123339
+									],
+									[
+										123506,
+										123514
+									],
+									[
+										123683,
+										123691
+									],
+									[
+										123875,
+										123883
+									],
+									[
+										124536,
+										124544
+									],
+									[
+										125154,
+										125162
+									],
+									[
+										125400,
+										125408
+									],
+									[
+										125666,
+										125674
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 17667.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "RDownieWeb.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 565.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
